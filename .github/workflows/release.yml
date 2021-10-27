@@ -1,0 +1,49 @@
+name: Release
+on: workflow_dispatch
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12.x'
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - run: npm install -g npm@7.x
+
+      - run: |
+          VERSION=`npm pkg get version`
+          VERSION=`sed -e 's/^"//' -e 's/"$//' <<<"$VERSION"`
+          echo RELEASE_VERSION=$VERSION >> $GITHUB_ENV
+          echo "RELEASE_VERSION_MAJOR=v${VERSION%%.*}" >> $GITHUB_ENV
+
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ env.RELEASE_VERSION_MAJOR }}
+          path: 'release'
+        id: checkoutrelease
+        continue-on-error: true
+
+      - uses: actions/checkout@v2
+        if: steps.checkoutrelease.outcome != 'success'
+        with:
+          path: 'release'
+
+      - name: 'Commit and push release'
+        run: |
+          pushd .
+          cd release
+          git restore --source=master -SW .
+          cp -a ../dist/. dist
+          git add -f dist/**
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git commit -m "Release $RELEASE_VERSION"
+          git push -u origin master:$RELEASE_VERSION_MAJOR
+          popd
