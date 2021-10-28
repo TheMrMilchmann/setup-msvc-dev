@@ -53,7 +53,10 @@ jobs:
           arch: ${{ matrix.arch }}
 
       - name: 'Verify cl.exe'
-        run: where cl.exe
+        shell: cmd
+        run: |
+          where cl.exe
+          IF ERRORLEVEL 1 exit ERRORLEVEL
 
   test-path-exports:
     name: Test exporting tool paths - ${{ matrix.os }}
@@ -78,8 +81,8 @@ jobs:
 
       - name: 'Verify path to vcvarsall.bat'
         shell: cmd
-        run: IF NOT EXIST %PATH_TO_VCVARSALL%\vcvarsall.bat exit 1
+        run: IF NOT EXIST "%PATH_TO_VCVARSALL%\vcvarsall.bat" exit 1
 
       - name: 'Verify path to VS'
         shell: cmd
-        run: IF NOT EXIST %PATH_TO_VS% exit 1
+        run: IF NOT EXIST "%PATH_TO_VS%" exit 1
