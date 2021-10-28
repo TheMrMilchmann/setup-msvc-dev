@@ -20,7 +20,8 @@ async function run() {
 
         if (!vsPath) vsPath = vswhere.findVS();
 
-        let vcvarsallPath = `${vsPath}\\VC\\Auxiliary\\Build\\vcvarsall.bat`;
+        let pathToVCVarsall = `${vsPath}\\VC\\Auxiliary\\Build`
+        let vcvarsallPath = `${pathToVCVarsall}\\vcvarsall.bat`;
 
         if (!vcvarsallPath || !fs.existsSync(vcvarsallPath)) {
             console.error(`vcvarsall.bat does not exist at expected location '${vcvarsallPath}'`);
@@ -45,8 +46,8 @@ async function run() {
         if (exportVCVarsall) {
             tasks++;
 
-            core.info(`Exporting path to vcvarsall.bat: ${exportVS}=${vsPath}`);
-            core.exportVariable(exportVCVarsall, vcvarsallPath);
+            core.info(`Exporting path to vcvarsall.bat: ${exportVCVarsall}=${pathToVCVarsall}`);
+            core.exportVariable(exportVCVarsall, pathToVCVarsall);
         }
 
         if (exportVS) {
