@@ -77,7 +77,9 @@ jobs:
           export-path-to-vs: PATH_TO_VS
 
       - name: 'Verify path to vcvarsall.bat'
+        shell: cmd
         run: IF NOT EXIST %PATH_TO_VCVARSALL%\vcvarsall.bat exit 1
 
       - name: 'Verify path to VS'
+        shell: cmd
         run: IF NOT EXIST %PATH_TO_VS% exit 1
