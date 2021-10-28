@@ -35,7 +35,7 @@ async function run() {
             arch = normalizeArch(arch);
 
             try {
-                child.execSync(`${vcvarsallPath.replace(/ /g, "\\ ")} ${arch}`);
+                child.execSync(`"${vcvarsallPath}" ${arch}`);
             } catch (error) {
                 core.error("vcvarsall.bat invocation failed with error: " + error);
                 return;
