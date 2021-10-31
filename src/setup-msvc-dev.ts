@@ -67,9 +67,10 @@ async function run() {
                 return;
             }
 
-            const oldEnvOutput = commandOutput[0].split("\r\n");
-            const vcvarsallOutput = commandOutput[1].split("\r\n");
-            const newEnvOutput = commandOutput[2].split("\r\n");
+            const commandOutputParts = commandOutput.split("\f");
+            const oldEnvOutput = commandOutputParts[0].split("\r\n");
+            const vcvarsallOutput = commandOutputParts[1].split("\r\n");
+            const newEnvOutput = commandOutputParts[2].split("\r\n");
 
             const errorMessages = vcvarsallOutput.filter((line) => line.match(/^\[ERROR.*]/));
             if (errorMessages.length > 0) {
