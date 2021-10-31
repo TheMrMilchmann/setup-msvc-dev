@@ -1,3 +1,25 @@
+/*
+ * Copyright (c) 2019 ilammy
+ * Copyright (c) 2021 Leon Linhart
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
 import * as core from "@actions/core";
 import * as child from "child_process";
 import * as constants from "./constants";
@@ -35,12 +57,61 @@ async function run() {
 
             arch = normalizeArch(arch);
 
+            let commandOutput;
+
             try {
-                child.execSync(`"${vcvarsallPath}" ${arch}`, { shell: "cmd" });
+                commandOutput = child.execSync(`"set && cls && ${vcvarsallPath}" ${arch} && cls && set`, { shell: "cmd" })
+                    .toString();
             } catch (error) {
                 core.error("vcvarsall.bat invocation failed with error: " + error);
                 return;
             }
+
+            const oldEnvOutput = commandOutput[0].split("\r\n");
+            const vcvarsallOutput = commandOutput[1].split("\r\n");
+            const newEnvOutput = commandOutput[2].split("\r\n");
+
+            const errorMessages = vcvarsallOutput.filter((line) => line.match(/^\[ERROR.*]/));
+            if (errorMessages.length > 0) {
+                core.error("Invocation of vcvarsall.bat failed:\r\n" + errorMessages.join("\r\n"));
+                return;
+            }
+
+            let oldEnv = {};
+
+            for (const string of oldEnvOutput) {
+                const [name, value] = string.split("=");
+                // @ts-ignore
+                oldEnv[name] = value;
+            }
+
+            core.startGroup("Environment variables");
+            for (const string of newEnvOutput) {
+                if (!string.includes("=")) continue;
+
+                let [name, newValue] = string.split("=");
+
+                // @ts-ignore
+                if (newValue !== oldEnv[name]) {
+                    core.info(`Setting ${name}`);
+
+                    const pathLikeVariables = ["PATH", "INCLUDE", "LIB", "LIBPATH"];
+                    if (pathLikeVariables.indexOf(name.toUpperCase()) !== 1) {
+                        function unqiue(value: string, index: number, self: string[]) {
+                            return self.indexOf(value) === index;
+                        }
+
+                        newValue = newValue.split(';')
+                            .filter(unqiue)
+                            .join(";");
+                    }
+
+                    core.exportVariable(name, newValue);
+                }
+            }
+
+            core.endGroup();
+            core.info("Configured Developer Command Prompt");
         }
 
         if (exportVCVarsall) {
