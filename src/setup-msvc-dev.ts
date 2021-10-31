@@ -145,7 +145,7 @@ function normalizeArch(arch: string): string {
     }
 
     function normalize(arch: string): string {
-        if (eq("x86") || eq("win32")) {
+        if (eq("x86") || eq("x32") || eq("win32")) {
             return "x86";
         } else if (eq("x64") || eq("win64") || eq("x86_64") || eq("x86-64")) {
             return "x64";
