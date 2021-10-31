@@ -60,7 +60,7 @@ async function run() {
             let commandOutput;
 
             try {
-                commandOutput = child.execSync(`"set && cls && ${vcvarsallPath}" ${arch} && cls && set`, { shell: "cmd" })
+                commandOutput = child.execSync(`set && cls && "${vcvarsallPath}" ${arch} && cls && set`, { shell: "cmd" })
                     .toString();
             } catch (error) {
                 core.error("vcvarsall.bat invocation failed with error: " + error);
