@@ -40,6 +40,7 @@ jobs:
       matrix:
         os: [windows-2016, windows-2019, windows-2022]
         arch: [x64, x32, x86_arm, x86_arm64]
+        shell: [cmd, powershell]
     steps:
       - name: Checkout
         uses: actions/download-artifact@v2
@@ -53,7 +54,7 @@ jobs:
           arch: ${{ matrix.arch }}
 
       - name: 'Verify cl.exe'
-        shell: cmd
+        shell: ${{ matrix.shell }}
         run: |
           where cl.exe
           IF ERRORLEVEL 1 exit ERRORLEVEL
