@@ -27,8 +27,10 @@ steps:
   - native compilation:
     - `x64`
     - `x86`
-  - cross-compilation: `x86_amd64`, `x86_arm`
-  - Check the documentation of 
+  - cross-compilation: `x86_amd64`, `x86_arm`, `x86_arm64`, `amd64_x86`,
+    `amd64_arm`, `amd64_arm64`
+  - Check [the Microsoft documentation](https://docs.microsoft.com/en-us/cpp/build/building-on-the-command-line)
+    for all possible options
 - `vs-path` – the path to the Visual Studio installation
   - do not specify to use the latest installation
 - `sdk` – Windows SDK to use
