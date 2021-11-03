@@ -36,9 +36,18 @@ async function run() {
 
         let arch = core.getInput(constants.INPUT_ARCHITECTURE);
         let vsPath = core.getInput(constants.INPUT_VS_PATH);
+        let sdk = core.getInput(constants.INPUT_SDK);
+        let spectre = core.getInput(constants.INPUT_SPECTRE);
+        let toolset = core.getInput(constants.INPUT_TOOLSET);
+        let uwp = core.getInput(constants.INPUT_UWP);
 
         let exportVCVarsall = core.getInput(constants.INPUT_EXPORT_VCVARSALL);
         let exportVS = core.getInput(constants.INPUT_EXPORT_VS);
+
+        if (!arch && (sdk || spectre || toolset || uwp)) {
+            core.error("Please specify the architecture");
+            return;
+        }
 
         if (!vsPath) vsPath = vswhere.findVS();
 
@@ -46,7 +55,7 @@ async function run() {
         let vcvarsallPath = `${pathToVCVarsall}\\vcvarsall.bat`;
 
         if (!vcvarsallPath || !fs.existsSync(vcvarsallPath)) {
-            console.error(`vcvarsall.bat does not exist at expected location '${vcvarsallPath}'`);
+            core.error(`vcvarsall.bat does not exist at expected location '${vcvarsallPath}'`);
             return;
         }
 
@@ -60,7 +69,13 @@ async function run() {
             let commandOutput;
 
             try {
-                commandOutput = child.execSync(`set && cls && "${vcvarsallPath}" ${arch} && cls && set`, { shell: "cmd" })
+                let command = `"${vcvarsallPath}" ${arch}`;
+                if (uwp == "true") command += " uwp";
+                if (sdk) command += ` ${sdk}`;
+                if (toolset) command += ` -vcvars_ver=${toolset}`;
+                if (spectre == "true") command += " -vcvars_spectre_libs=spectre";
+
+                commandOutput = child.execSync(`set && cls && ${command} && cls && set`, { shell: "cmd" })
                     .toString();
             } catch (error) {
                 core.error("vcvarsall.bat invocation failed with error: " + error);
