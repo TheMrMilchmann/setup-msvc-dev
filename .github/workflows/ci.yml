@@ -47,7 +47,7 @@ jobs:
           name: build-results
           path: .
 
-      - name: setup-mvsc-dev
+      - name: setup-msvc-dev
         uses: ./
         with:
           arch: ${{ matrix.arch }}
@@ -73,7 +73,7 @@ jobs:
           name: build-results
           path: .
 
-      - name: setup-mvsc-dev
+      - name: setup-msvc-dev
         uses: ./
         with:
           export-path-to-vcvarsall: PATH_TO_VCVARSALL
