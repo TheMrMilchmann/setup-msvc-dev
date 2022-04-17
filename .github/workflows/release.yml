@@ -5,7 +5,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - uses: actions/setup-node@v2
         with:
@@ -23,14 +23,14 @@ jobs:
           echo RELEASE_VERSION=$VERSION >> $GITHUB_ENV
           echo "RELEASE_VERSION_MAJOR=v${VERSION%%.*}" >> $GITHUB_ENV
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: ${{ env.RELEASE_VERSION_MAJOR }}
           path: 'release'
         id: checkoutrelease
         continue-on-error: true
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         if: steps.checkoutrelease.outcome != 'success'
         with:
           path: 'release'
