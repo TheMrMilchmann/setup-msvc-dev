@@ -46,5 +46,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git commit -m "Release $RELEASE_VERSION"
           git tag v$RELEASE_VERSION
-          git push -u origin master:$RELEASE_VERSION_MAJOR --tags
+          git push -u origin HEAD:$RELEASE_VERSION_MAJOR --tags
           popd
