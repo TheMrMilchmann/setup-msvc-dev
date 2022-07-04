@@ -1,6 +1,6 @@
 ### 1.0.0
 
-_2021 Nov 03_
+_Released 2021 Nov 03_
 
 #### Overview
 
