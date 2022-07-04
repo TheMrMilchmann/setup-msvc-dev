@@ -1,7 +1,9 @@
-### 1.0.1
+### 2.0.0
 
 _Released 2022 Jul 04_
 
-#### Overview
+#### Improvements
 
-This is a maintenance release only and does not contain any behavioral change.
+- Updated to the node16 runtime by default.
+    - This requires a minimum [Actions Runner](https://github.com/actions/runner/releases/tag/v2.285.0)
+      version of v2.285.0 to run, which is by default available in GHES 3.4 or later.
