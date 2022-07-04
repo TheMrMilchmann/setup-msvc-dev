@@ -1,4 +1,4 @@
-# setup-mvsc-dev
+# setup-msvc-dev
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square&label=License)](https://github.com/TheMrMilchmann/setup-msvc-dev/blob/master/LICENSE)
 
@@ -15,7 +15,7 @@ additional use-cases and to experiment further with GitHub Actions.
 ```yaml
 steps:
   - uses: actions/checkout@v1
-  - uses: TheMrMilchmann/setup-mvsc-dev@v1
+  - uses: TheMrMilchmann/setup-msvc-dev@v1
     with:
       arch: x64
 ```
