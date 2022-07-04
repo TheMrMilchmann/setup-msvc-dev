@@ -40,7 +40,7 @@ jobs:
         run: |
           pushd .
           cd release
-          git restore --source=master -SW .
+          git restore --source=origin/master -SW .
           cp -a ../dist/. dist
           git add -f dist/**
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
