@@ -14,8 +14,7 @@ additional use-cases and to experiment further with GitHub Actions.
 
 ```yaml
 steps:
-  - uses: actions/checkout@v1
-  - uses: TheMrMilchmann/setup-msvc-dev@v1
+  - uses: TheMrMilchmann/setup-msvc-dev@v2
     with:
       arch: x64
 ```
