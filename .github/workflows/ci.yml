@@ -26,10 +26,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
+          cache: "yarn"
 
-      - run: npm ci
-
-      - run: npm run build
+      - name: Yarn build
+        run: yarn build
 
       - uses: actions/upload-artifact@v3
         with:
@@ -111,7 +111,7 @@ jobs:
   cleanup:
     name: Cleanup
     if: ${{ always() }}
-    needs: ['test-vcvarsall-invocation', 'test-path-exports']
+    needs: [test-vcvarsall-invocation, test-path-exports]
     runs-on: ubuntu-latest
     steps:
       - name: Cleanup
