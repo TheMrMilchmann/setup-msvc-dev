@@ -1,11 +1,11 @@
 {
   "name": "setup-msvc-dev",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build -o dist src/setup-msvc-dev.ts"
+    "build": "tsc && ncc build -o dist src/setup-msvc-dev.ts"
   },
   "repository": {
     "type": "git",
@@ -20,12 +20,16 @@
   "author": "TheMrMilchmann",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.9.0",
-    "@actions/github": "^5.0.3"
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
   },
   "devDependencies": {
-    "@types/node": "^16.11.43",
-    "@vercel/ncc": "^0.34.0",
-    "typescript": "^4.7.4"
-  }
+    "@types/node": "^16.18.14",
+    "@vercel/ncc": "^0.36.1",
+    "typescript": "^4.9.5"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "packageManager": "yarn@3.6.1"
 }

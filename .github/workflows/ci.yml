@@ -12,6 +12,11 @@ on:
     paths-ignore:
       - '**.md'
 
+
+env:
+  workspace_artifact: build-results
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,15 +26,17 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
+          cache: "yarn"
 
-      - run: npm ci
-
-      - run: npm run build
+      - name: Yarn build
+        run: yarn build
 
       - uses: actions/upload-artifact@v3
         with:
-          name: build-results
+          name: ${{ env.workspace_artifact }}
           path: .
+          retention-days: 1
+
 
   test-vcvarsall-invocation:
     name: Test Developer Command Prompt Setup (${{ matrix.arch }}) - ${{ matrix.os }}
@@ -44,7 +51,7 @@ jobs:
       - name: Checkout
         uses: actions/download-artifact@v3
         with:
-          name: build-results
+          name: ${{ env.workspace_artifact }}
           path: .
 
       - name: setup-msvc-dev
@@ -58,6 +65,7 @@ jobs:
           where cl.exe
           IF ERRORLEVEL 1 exit ERRORLEVEL
 
+
   test-path-exports:
     name: Test exporting tool paths - ${{ matrix.os }}
     needs: build
@@ -70,7 +78,7 @@ jobs:
       - name: Checkout
         uses: actions/download-artifact@v3
         with:
-          name: build-results
+          name: ${{ env.workspace_artifact }}
           path: .
 
       - name: setup-msvc-dev
@@ -86,3 +94,27 @@ jobs:
       - name: 'Verify path to VS'
         shell: cmd
         run: IF NOT EXIST "%PATH_TO_VS%" exit 1
+
+
+  # So, what's happening here?
+  #
+  # Basically, restoring the workspace state between jobs is incredibly annoying.
+  # We can get reasonable support by using the upload-/download-artifact
+  # actions, but they suffer from a severe limitation:
+  # GH Actions has a storage limit and the minimum retention is 24 hours...
+  #
+  # Since the storage quota is limited, we have to make sure that the artifact
+  # is removed. Unfortunately, there is no official way to do this, so we resort
+  # to a third party action for now.
+  #
+  # See also: https://github.com/actions/upload-artifact/issues/290
+  cleanup:
+    name: Cleanup
+    if: ${{ always() }}
+    needs: [test-vcvarsall-invocation, test-path-exports]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cleanup
+        uses: GeekyEggo/delete-artifact@54ab544f12cdb7b71613a16a2b5a37a9ade990af
+        with:
+          name: ${{ env.workspace_artifact }}
