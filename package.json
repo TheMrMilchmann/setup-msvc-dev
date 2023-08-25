@@ -24,7 +24,7 @@
     "@actions/github": "^5.1.1"
   },
   "devDependencies": {
-    "@types/node": "^16.18.44",
+    "@types/node": "^16.18.46",
     "@vercel/ncc": "^0.36.1",
     "typescript": "^5.1.6"
   },
