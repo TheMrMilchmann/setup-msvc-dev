@@ -2,10 +2,14 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "CommonJS",
+    "moduleResolution": "node",
+    "lib": ["ES6"],
+
+    "rootDir": "src",
+    "outDir": "lib",
+
     "allowJs": false,
-    "declaration": false,
-    "outDir": "./lib",
-    "rootDir": "./src",
+    "declaration": true,
 
     /* Strict Type-Checking Options */
     "strict": true,
@@ -13,11 +17,20 @@
     /* Additional Checks */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noImplicitAny": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
 
     /* Module Resolution Options */
-    "esModuleInterop": true
+    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "dist",
+    "lib",
+    "**/*.config.ts",
+    "**/*.test.ts"
+  ]
 }
