@@ -31,7 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@actions/core", "npm:1.10.0"],\
             ["@actions/github", "npm:5.1.1"],\
             ["@types/node", "npm:16.18.48"],\
-            ["@vercel/ncc", "npm:0.36.1"],\
+            ["@vercel/ncc", "npm:0.38.0"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -276,10 +276,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@vercel/ncc", [\
-        ["npm:0.36.1", {\
-          "packageLocation": "./.yarn/cache/@vercel-ncc-npm-0.36.1-03b691ae30-dcb8db089b.zip/node_modules/@vercel/ncc/",\
+        ["npm:0.38.0", {\
+          "packageLocation": "./.yarn/cache/@vercel-ncc-npm-0.38.0-6dfbe77067-859af1b1dc.zip/node_modules/@vercel/ncc/",\
           "packageDependencies": [\
-            ["@vercel/ncc", "npm:0.36.1"],\
+            ["@vercel/ncc", "npm:0.38.0"],\
             ["node-gyp", "npm:9.4.0"]\
           ],\
           "linkType": "HARD"\
@@ -1262,7 +1262,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@actions/core", "npm:1.10.0"],\
             ["@actions/github", "npm:5.1.1"],\
             ["@types/node", "npm:16.18.48"],\
-            ["@vercel/ncc", "npm:0.36.1"],\
+            ["@vercel/ncc", "npm:0.38.0"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
