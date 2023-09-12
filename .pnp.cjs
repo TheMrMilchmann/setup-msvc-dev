@@ -28,7 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@actions/core", "npm:1.10.0"],\
+            ["@actions/core", "npm:1.10.1"],\
             ["@actions/github", "npm:5.1.1"],\
             ["@types/node", "npm:16.18.50"],\
             ["@vercel/ncc", "npm:0.38.0"],\
@@ -38,10 +38,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@actions/core", [\
-        ["npm:1.10.0", {\
-          "packageLocation": "./.yarn/cache/@actions-core-npm-1.10.0-6885534582-0a75621e00.zip/node_modules/@actions/core/",\
+        ["npm:1.10.1", {\
+          "packageLocation": "./.yarn/cache/@actions-core-npm-1.10.1-3cb1000b4d-96524c2725.zip/node_modules/@actions/core/",\
           "packageDependencies": [\
-            ["@actions/core", "npm:1.10.0"],\
+            ["@actions/core", "npm:1.10.1"],\
             ["@actions/http-client", "npm:2.1.0"],\
             ["uuid", "npm:8.3.2"]\
           ],\
@@ -1259,7 +1259,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["setup-msvc-dev", "workspace:."],\
-            ["@actions/core", "npm:1.10.0"],\
+            ["@actions/core", "npm:1.10.1"],\
             ["@actions/github", "npm:5.1.1"],\
             ["@types/node", "npm:16.18.50"],\
             ["@vercel/ncc", "npm:0.38.0"],\
