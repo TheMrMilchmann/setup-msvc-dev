@@ -183,10 +183,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.18.53":
-  version: 16.18.53
-  resolution: "@types/node@npm:16.18.53"
-  checksum: 26c05cde59664360c22e0dda70776ca6f1b35f0b94e4f84d2c21e2afa2e69ac3a2c99bbb57b43405f81df1b2598f6d707ccc7c4c31865f90e45c4625d8400518
+"@types/node@npm:^16.18.54":
+  version: 16.18.54
+  resolution: "@types/node@npm:16.18.54"
+  checksum: 208e8fc64f605e9cd55ab5e620a0fd019d8fe5629e3e3c5de869a149b731ab0fac5720c516dccc0ecc834ac27df754723dfe6554551663f016ba5096ea8851df
   languageName: node
   linkType: hard
 
@@ -1060,7 +1060,7 @@ __metadata:
   dependencies:
     "@actions/core": ^1.10.1
     "@actions/github": ^5.1.1
-    "@types/node": ^16.18.53
+    "@types/node": ^16.18.54
     "@vercel/ncc": ^0.38.0
     typescript: ^5.2.2
   languageName: unknown
