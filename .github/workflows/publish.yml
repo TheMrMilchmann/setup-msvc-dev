@@ -1,16 +1,9 @@
-name: CI
+name: Publish
+on: workflow_dispatch
 
-on:
-  push:
-    branches-ignore:
-      - 'v*'
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    branches-ignore:
-      - 'v*'
-    paths-ignore:
-      - '**.md'
+
+concurrency:
+  group: publish-${{ github.ref }}
 
 
 env:
@@ -20,14 +13,16 @@ env:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          node-version: '20.x'
-          cache: "yarn"
+          node-version: "20.x"
 
       - name: Yarn build
         run: yarn build
@@ -110,6 +105,64 @@ jobs:
         run: IF NOT EXIST "%PATH_TO_VS%" exit 1
 
 
+  publish:
+    name: Publish
+    needs: ["build", "test-vcvarsall-invocation", "test-path-exports"]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ env.WORKSPACE_ARTIFACT }}
+          path: .
+
+      - name: Untar
+        run: |
+          tar -xvf ${{ env.WORKSPACE_ARCHIVE }}
+          rm ${{ env.WORKSPACE_ARCHIVE }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.x"
+          cache: "yarn"
+
+      - run: |
+          VERSION=`npm pkg get version`
+          VERSION=`sed -e 's/^"//' -e 's/"$//' <<<"$VERSION"`
+          echo RELEASE_VERSION=$VERSION >> $GITHUB_ENV
+          echo "RELEASE_VERSION_MAJOR=v${VERSION%%.*}" >> $GITHUB_ENV
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.RELEASE_VERSION_MAJOR }}
+          path: "release"
+        id: checkoutrelease
+        continue-on-error: true
+
+      - uses: actions/checkout@v4
+        if: steps.checkoutrelease.outcome != 'success'
+        with:
+          path: "release"
+
+      - name: Commit and push release
+        run: |
+          pushd .
+          cd release
+          git restore --source=origin/master -SW .
+          cp -a ../dist/. dist
+          git add -f dist/**
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git commit -m "Release $RELEASE_VERSION"
+          git tag v$RELEASE_VERSION
+          git push -u origin HEAD:$RELEASE_VERSION_MAJOR --tags
+          popd
+
+
   # So, what's happening here?
   #
   # Basically, restoring the workspace state between jobs is incredibly annoying.
@@ -125,7 +178,7 @@ jobs:
   cleanup:
     name: Cleanup
     if: ${{ always() }}
-    needs: [test-vcvarsall-invocation, test-path-exports]
+    needs: publish
     runs-on: ubuntu-latest
     steps:
       - name: Cleanup
