@@ -1,7 +1,9 @@
-### 2.0.1
+### 2.0.2
 
-_Released 2023 Jul 04_
+_Released 2023 Sep 26_
 
-#### Overview
+#### Fixes
 
-This is a maintenance release only and does not contain any behavioral change.
+- The action now correctly reports failure.
+    - There is a chance that this breaks some workflows that previously silently
+      accepted failure.
