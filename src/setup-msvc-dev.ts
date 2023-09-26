@@ -30,7 +30,7 @@ import * as vswhere from "./vswhere";
 async function run() {
     try {
         if (os.platform() != "win32") {
-            core.error(`setup-msvc-dev is only supported on Windows (found "${os.platform()}")`);
+            core.setFailed(`setup-msvc-dev is only supported on Windows (found "${os.platform()}")`);
             return;
         }
 
@@ -45,7 +45,7 @@ async function run() {
         let exportVS = core.getInput(constants.INPUT_EXPORT_VS);
 
         if (!arch && (sdk || spectre || toolset || uwp)) {
-            core.error("Please specify the architecture");
+            core.setFailed("Please specify the architecture");
             return;
         }
 
@@ -55,7 +55,7 @@ async function run() {
         let vcvarsallPath = `${pathToVCVarsall}\\vcvarsall.bat`;
 
         if (!vcvarsallPath || !fs.existsSync(vcvarsallPath)) {
-            core.error(`vcvarsall.bat does not exist at expected location '${vcvarsallPath}'`);
+            core.setFailed(`vcvarsall.bat does not exist at expected location '${vcvarsallPath}'`);
             return;
         }
 
@@ -78,7 +78,7 @@ async function run() {
                 commandOutput = child.execSync(`set && cls && ${command} && cls && set`, { shell: "cmd" })
                     .toString();
             } catch (error) {
-                core.error("vcvarsall.bat invocation failed with error: " + error);
+                core.setFailed("vcvarsall.bat invocation failed with error: " + error);
                 return;
             }
 
@@ -89,7 +89,7 @@ async function run() {
 
             const errorMessages = vcvarsallOutput.filter((line) => line.match(/^\[ERROR.*]/));
             if (errorMessages.length > 0) {
-                core.error("Invocation of vcvarsall.bat failed:\r\n" + errorMessages.join("\r\n"));
+                core.setFailed("Invocation of vcvarsall.bat failed:\r\n" + errorMessages.join("\r\n"));
                 return;
             }
 
@@ -145,7 +145,7 @@ async function run() {
         }
 
         if (tasks === 0) {
-            core.error("setup-msvc-dev did nothing. Please configure at least one of 'arch', 'exportVCVarsall', or 'exportVS'.");
+            core.setFailed("setup-msvc-dev did nothing. Please configure at least one of 'arch', 'exportVCVarsall', or 'exportVS'.");
             return;
         }
     } catch (error) {
