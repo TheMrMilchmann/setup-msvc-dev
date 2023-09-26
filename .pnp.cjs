@@ -28,20 +28,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@actions/core", "npm:1.10.0"],\
+            ["@actions/core", "npm:1.10.1"],\
             ["@actions/github", "npm:5.1.1"],\
-            ["@types/node", "npm:16.18.38"],\
-            ["@vercel/ncc", "npm:0.36.1"],\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"]\
+            ["@types/node", "npm:16.18.54"],\
+            ["@vercel/ncc", "npm:0.38.0"],\
+            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
         }]\
       ]],\
       ["@actions/core", [\
-        ["npm:1.10.0", {\
-          "packageLocation": "./.yarn/cache/@actions-core-npm-1.10.0-6885534582-0a75621e00.zip/node_modules/@actions/core/",\
+        ["npm:1.10.1", {\
+          "packageLocation": "./.yarn/cache/@actions-core-npm-1.10.1-3cb1000b4d-96524c2725.zip/node_modules/@actions/core/",\
           "packageDependencies": [\
-            ["@actions/core", "npm:1.10.0"],\
+            ["@actions/core", "npm:1.10.1"],\
             ["@actions/http-client", "npm:2.1.0"],\
             ["uuid", "npm:8.3.2"]\
           ],\
@@ -267,19 +267,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/node", [\
-        ["npm:16.18.38", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.18.38-55313aa2bd-a3baa141e4.zip/node_modules/@types/node/",\
+        ["npm:16.18.54", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.18.54-a8120067c9-208e8fc64f.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:16.18.38"]\
+            ["@types/node", "npm:16.18.54"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@vercel/ncc", [\
-        ["npm:0.36.1", {\
-          "packageLocation": "./.yarn/cache/@vercel-ncc-npm-0.36.1-03b691ae30-dcb8db089b.zip/node_modules/@vercel/ncc/",\
+        ["npm:0.38.0", {\
+          "packageLocation": "./.yarn/cache/@vercel-ncc-npm-0.38.0-6dfbe77067-859af1b1dc.zip/node_modules/@vercel/ncc/",\
           "packageDependencies": [\
-            ["@vercel/ncc", "npm:0.36.1"],\
+            ["@vercel/ncc", "npm:0.38.0"],\
             ["node-gyp", "npm:9.4.0"]\
           ],\
           "linkType": "HARD"\
@@ -1259,11 +1259,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["setup-msvc-dev", "workspace:."],\
-            ["@actions/core", "npm:1.10.0"],\
+            ["@actions/core", "npm:1.10.1"],\
             ["@actions/github", "npm:5.1.1"],\
-            ["@types/node", "npm:16.18.38"],\
-            ["@vercel/ncc", "npm:0.36.1"],\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"]\
+            ["@types/node", "npm:16.18.54"],\
+            ["@vercel/ncc", "npm:0.38.0"],\
+            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1429,10 +1429,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typescript", [\
-        ["patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-f8edcd7439-1f8f3b6aae.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-2e8dbfb8ab-0f4da2f15e.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"]\
+            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "HARD"\
         }]\

@@ -5,13 +5,13 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@actions/core@npm:^1.10.0":
-  version: 1.10.0
-  resolution: "@actions/core@npm:1.10.0"
+"@actions/core@npm:^1.10.1":
+  version: 1.10.1
+  resolution: "@actions/core@npm:1.10.1"
   dependencies:
     "@actions/http-client": ^2.0.1
     uuid: ^8.3.2
-  checksum: 0a75621e007ab20d887434cdd165f0b9036f14c22252a2faed33543d8b9d04ec95d823e69ca636a25245574e4585d73e1e9e47a845339553c664f9f2c9614669
+  checksum: 96524c2725e70e3c3176b4e4d93a1358a86f3c5ca777db9a2f65eadfa672f00877db359bf60fffc416c33838ffb4743db93bcc5bf53e76199dd28bf7f7ff8e80
   languageName: node
   linkType: hard
 
@@ -183,21 +183,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.18.14":
-  version: 16.18.38
-  resolution: "@types/node@npm:16.18.38"
-  checksum: a3baa141e49ce94486f083eea1240cf38479a73ba663e1bf3f52f85b466125821b6e3ea85ded38fde3901530aca4601291395a50eefcea533a4f3b45171bda28
+"@types/node@npm:^16.18.54":
+  version: 16.18.54
+  resolution: "@types/node@npm:16.18.54"
+  checksum: 208e8fc64f605e9cd55ab5e620a0fd019d8fe5629e3e3c5de869a149b731ab0fac5720c516dccc0ecc834ac27df754723dfe6554551663f016ba5096ea8851df
   languageName: node
   linkType: hard
 
-"@vercel/ncc@npm:^0.36.1":
-  version: 0.36.1
-  resolution: "@vercel/ncc@npm:0.36.1"
+"@vercel/ncc@npm:^0.38.0":
+  version: 0.38.0
+  resolution: "@vercel/ncc@npm:0.38.0"
   dependencies:
     node-gyp: latest
   bin:
     ncc: dist/ncc/cli.js
-  checksum: dcb8db089b07a8fad64c24eef25be6bc2db7ba30582a03236e3a6d332c8653d93a45aba7fe0e01b6d64f3c5b54d23467539ac3664c113f54a9e59341ded79bf9
+  checksum: 859af1b1dcca540ccf564f422a906c40ce5e97762e6cad11aabe319ae212bd7bce2d2c7f2caffcf3aee0aa5d4bf16b6e7a53a4577dd6fd4bc24962c2246fe110
   languageName: node
   linkType: hard
 
@@ -1058,11 +1058,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "setup-msvc-dev@workspace:."
   dependencies:
-    "@actions/core": ^1.10.0
+    "@actions/core": ^1.10.1
     "@actions/github": ^5.1.1
-    "@types/node": ^16.18.14
-    "@vercel/ncc": ^0.36.1
-    typescript: ^4.9.5
+    "@types/node": ^16.18.54
+    "@vercel/ncc": ^0.38.0
+    typescript: ^5.2.2
   languageName: unknown
   linkType: soft
 
@@ -1210,23 +1210,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.9.5":
-  version: 4.9.5
-  resolution: "typescript@npm:4.9.5"
+"typescript@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "typescript@npm:5.2.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: ee000bc26848147ad423b581bd250075662a354d84f0e06eb76d3b892328d8d4440b7487b5a83e851b12b255f55d71835b008a66cbf8f255a11e4400159237db
+  checksum: 7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
-  version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"
+"typescript@patch:typescript@^5.2.2#~builtin<compat/typescript>":
+  version: 5.2.2
+  resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 1f8f3b6aaea19f0f67cba79057674ba580438a7db55057eb89cc06950483c5d632115c14077f6663ea76fd09fce3c190e6414bb98582ec80aa5a4eaf345d5b68
+  checksum: 0f4da2f15e6f1245e49db15801dbee52f2bbfb267e1c39225afdab5afee1a72839cd86000e65ee9d7e4dfaff12239d28beaf5ee431357fcced15fb08583d72ca
   languageName: node
   linkType: hard
 

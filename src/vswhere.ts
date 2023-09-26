@@ -20,7 +20,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-import * as core from "@actions/core";
 import * as child from "child_process";
 
 export function findVS(): string {
@@ -28,8 +27,7 @@ export function findVS(): string {
         return child.execSync("vswhere -products * -latest -prerelease -property installationPath")
             .toString()
             .trim();
-    } catch (error) {
-        core.error("vswhere did not find Visual Studio");
-        return "";
+    } catch (e) {
+        throw new Error("vswhere did not find Visual Studio", { cause: e });
     }
 }
