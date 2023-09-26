@@ -1,9 +1,9 @@
-### 2.0.2
+### 3.0.0
 
 _Released 2023 Sep 26_
 
-#### Fixes
+#### Improvements
 
-- The action now correctly reports failure.
-    - There is a chance that this breaks some workflows that previously silently
-      accepted failure.
+- Updated to the node20 runtime by default.
+    - This requires a minimum [Actions Runner](https://github.com/actions/runner/releases/tag/v2.308.0)
+      version of v2.308.0 to run.
