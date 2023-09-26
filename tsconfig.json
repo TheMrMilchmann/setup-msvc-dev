@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES2022",
     "module": "CommonJS",
     "moduleResolution": "node",
-    "lib": ["ES6"],
+    "lib": ["ES2022"],
 
     "rootDir": "src",
     "outDir": "lib",
