@@ -1,6 +1,6 @@
 # setup-msvc-dev
 
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square&label=License)](https://github.com/TheMrMilchmann/setup-msvc-dev/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge&label=License)](https://github.com/TheMrMilchmann/setup-msvc-dev/blob/master/LICENSE)
 
 A [GitHub Action](https://github.com/features/actions) to set up a Developer
 Command Prompt for Microsoft Visual C++.
