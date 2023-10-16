@@ -75,7 +75,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@actions/http-client", "npm:2.2.0"],\
             ["tunnel", "npm:0.0.6"],\
-            ["undici", "npm:5.26.0"]\
+            ["undici", "npm:5.26.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1422,10 +1422,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["undici", [\
-        ["npm:5.26.0", {\
-          "packageLocation": "./.yarn/cache/undici-npm-5.26.0-9fa3b02fec-e2c5771e3a.zip/node_modules/undici/",\
+        ["npm:5.26.3", {\
+          "packageLocation": "./.yarn/cache/undici-npm-5.26.3-bdeea4fdde-aaa9aadb71.zip/node_modules/undici/",\
           "packageDependencies": [\
-            ["undici", "npm:5.26.0"],\
+            ["undici", "npm:5.26.3"],\
             ["@fastify/busboy", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
