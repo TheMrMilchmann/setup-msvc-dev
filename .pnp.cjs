@@ -30,7 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@actions/core", "npm:1.10.1"],\
             ["@actions/github", "npm:6.0.0"],\
-            ["@types/node", "npm:20.9.3"],\
+            ["@types/node", "npm:20.9.4"],\
             ["@vercel/ncc", "npm:0.38.1"],\
             ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\
           ],\
@@ -282,10 +282,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/node", [\
-        ["npm:20.9.3", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-20.9.3-1bedd14426-0cfbfd2a8b.zip/node_modules/@types/node/",\
+        ["npm:20.9.4", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.9.4-a4808c97df-619144cfee.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:20.9.3"],\
+            ["@types/node", "npm:20.9.4"],\
             ["undici-types", "npm:5.26.5"]\
           ],\
           "linkType": "HARD"\
@@ -1254,7 +1254,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["setup-msvc-dev", "workspace:."],\
             ["@actions/core", "npm:1.10.1"],\
             ["@actions/github", "npm:6.0.0"],\
-            ["@types/node", "npm:20.9.3"],\
+            ["@types/node", "npm:20.9.4"],\
             ["@vercel/ncc", "npm:0.38.1"],\
             ["typescript", "patch:typescript@npm%3A5.3.2#~builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\
           ],\
