@@ -30,7 +30,7 @@ jobs:
       - name: Tar files
         run: tar -cvf ${{ env.WORKSPACE_ARCHIVE }} .
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: ${{ env.WORKSPACE_ARCHIVE }}
@@ -48,7 +48,7 @@ jobs:
         arch: [x64, x32, x86_arm, x86_arm64]
     steps:
       - name: Checkout
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: .
@@ -80,7 +80,7 @@ jobs:
         os: [windows-2019, windows-2022]
     steps:
       - name: Checkout
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: .
@@ -113,7 +113,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: .
