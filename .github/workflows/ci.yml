@@ -131,5 +131,4 @@ jobs:
       - name: Cleanup
         uses: GeekyEggo/delete-artifact@65041433121f7239077fa20be14c0690f70569de
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           name: ${{ env.workspace_artifact }}
