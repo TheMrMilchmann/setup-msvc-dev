@@ -1,6 +1,6 @@
 {
   "name": "setup-msvc-dev",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "private": true,
   "description": "",
   "main": "dist/index.js",
@@ -21,15 +21,15 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.10.1",
-    "@actions/github": "^5.1.1"
+    "@actions/github": "^6.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.7.0",
-    "@vercel/ncc": "^0.38.0",
-    "typescript": "^5.2.2"
+    "@types/node": "^20.14.9",
+    "@vercel/ncc": "^0.38.1",
+    "typescript": "^5.5.3"
   },
   "engines": {
     "node": ">= 20"
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@4.3.1"
 }

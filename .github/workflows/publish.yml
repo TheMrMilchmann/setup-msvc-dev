@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "20.x"
 
@@ -30,7 +30,7 @@ jobs:
       - name: Tar files
         run: tar -cvf ${{ env.WORKSPACE_ARCHIVE }} .
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: ${{ env.WORKSPACE_ARCHIVE }}
@@ -48,7 +48,7 @@ jobs:
         arch: [x64, x32, x86_arm, x86_arm64]
     steps:
       - name: Checkout
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: .
@@ -80,7 +80,7 @@ jobs:
         os: [windows-2019, windows-2022]
     steps:
       - name: Checkout
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: .
@@ -113,7 +113,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: .
@@ -124,7 +124,7 @@ jobs:
           rm ${{ env.WORKSPACE_ARCHIVE }}
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "20.x"
           cache: "yarn"
@@ -182,6 +182,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Cleanup
-        uses: GeekyEggo/delete-artifact@54ab544f12cdb7b71613a16a2b5a37a9ade990af
+        uses: GeekyEggo/delete-artifact@24928e75e6e6590170563b8ddae9fac674508aa1
         with:
           name: ${{ env.workspace_artifact }}
