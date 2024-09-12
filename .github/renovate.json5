@@ -1,0 +1,3 @@
+{
+    "extends": ["github>TheMrMilchmann/.github//.github/renovate.json5"]
+}

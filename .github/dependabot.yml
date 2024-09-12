@@ -16,17 +16,3 @@ updates:
         patterns:
           - "actions/download-artifact"
           - "actions/upload-artifact"
-
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    open-pull-requests-limit: 20
-    commit-message:
-      prefix: "build"
-    ignore:
-      - dependency-name: "@types/node"
-        update-types: ["version-update:semver-major"]
-    labels:
-      - "a:chore"
-      - "in:dependencies"
