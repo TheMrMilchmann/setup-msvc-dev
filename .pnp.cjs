@@ -30,7 +30,7 @@ const RAW_RUNTIME_STATE =
           ["@actions/core", "npm:1.10.1"],\
           ["@actions/github", "npm:6.0.0"],\
           ["@types/node", "npm:20.16.5"],\
-          ["@vercel/ncc", "npm:0.38.1"],\
+          ["@vercel/ncc", "npm:0.38.2"],\
           ["typescript", "patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"]\
         ],\
         "linkType": "SOFT"\
@@ -291,10 +291,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@vercel/ncc", [\
-      ["npm:0.38.1", {\
-        "packageLocation": "./.yarn/cache/@vercel-ncc-npm-0.38.1-529f6837ea-2ed9dff34b.zip/node_modules/@vercel/ncc/",\
+      ["npm:0.38.2", {\
+        "packageLocation": "./.yarn/cache/@vercel-ncc-npm-0.38.2-80db74908c-9a039147e3.zip/node_modules/@vercel/ncc/",\
         "packageDependencies": [\
-          ["@vercel/ncc", "npm:0.38.1"],\
+          ["@vercel/ncc", "npm:0.38.2"],\
           ["node-gyp", "npm:9.4.0"]\
         ],\
         "linkType": "HARD"\
@@ -1254,7 +1254,7 @@ const RAW_RUNTIME_STATE =
           ["@actions/core", "npm:1.10.1"],\
           ["@actions/github", "npm:6.0.0"],\
           ["@types/node", "npm:20.16.5"],\
-          ["@vercel/ncc", "npm:0.38.1"],\
+          ["@vercel/ncc", "npm:0.38.2"],\
           ["typescript", "patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"]\
         ],\
         "linkType": "SOFT"\
