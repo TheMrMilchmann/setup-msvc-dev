@@ -31,7 +31,7 @@ const RAW_RUNTIME_STATE =
           ["@actions/github", "npm:6.0.0"],\
           ["@types/node", "npm:20.16.11"],\
           ["@vercel/ncc", "npm:0.38.2"],\
-          ["typescript", "patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"]\
+          ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1274,7 +1274,7 @@ const RAW_RUNTIME_STATE =
           ["@actions/github", "npm:6.0.0"],\
           ["@types/node", "npm:20.16.11"],\
           ["@vercel/ncc", "npm:0.38.2"],\
-          ["typescript", "patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"]\
+          ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1431,10 +1431,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["typescript", [\
-      ["patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40", {\
-        "packageLocation": "./.yarn/cache/typescript-patch-9bf73ea0aa-8bfc7ca0d9.zip/node_modules/typescript/",\
+      ["patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40", {\
+        "packageLocation": "./.yarn/cache/typescript-patch-8964a48ba3-00504c01ee.zip/node_modules/typescript/",\
         "packageDependencies": [\
-          ["typescript", "patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"]\
+          ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
         ],\
         "linkType": "HARD"\
       }]\
