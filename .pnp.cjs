@@ -29,7 +29,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/core", "npm:1.11.1"],\
           ["@actions/github", "npm:6.0.0"],\
-          ["@types/node", "npm:20.16.11"],\
+          ["@types/node", "npm:20.16.12"],\
           ["@vercel/ncc", "npm:0.38.2"],\
           ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
         ],\
@@ -300,10 +300,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:20.16.11", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-20.16.11-05af3fb874-6d2f92b7b3.zip/node_modules/@types/node/",\
+      ["npm:20.16.12", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.16.12-9545bc9c83-689badb5af.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:20.16.11"],\
+          ["@types/node", "npm:20.16.12"],\
           ["undici-types", "npm:6.19.6"]\
         ],\
         "linkType": "HARD"\
@@ -1272,7 +1272,7 @@ const RAW_RUNTIME_STATE =
           ["setup-msvc-dev", "workspace:."],\
           ["@actions/core", "npm:1.11.1"],\
           ["@actions/github", "npm:6.0.0"],\
-          ["@types/node", "npm:20.16.11"],\
+          ["@types/node", "npm:20.16.12"],\
           ["@vercel/ncc", "npm:0.38.2"],\
           ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
         ],\
