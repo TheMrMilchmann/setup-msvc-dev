@@ -165,7 +165,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/graphql", "npm:7.1.0"],\
           ["@octokit/request", "npm:8.4.0"],\
           ["@octokit/request-error", "npm:5.1.0"],\
-          ["@octokit/types", "npm:13.6.1"],\
+          ["@octokit/types", "npm:13.6.2"],\
           ["before-after-hook", "npm:2.2.3"],\
           ["universal-user-agent", "npm:6.0.1"]\
         ],\
@@ -177,7 +177,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@octokit-endpoint-npm-9.0.5-9f96e75a5d-212122f653.zip/node_modules/@octokit/endpoint/",\
         "packageDependencies": [\
           ["@octokit/endpoint", "npm:9.0.5"],\
-          ["@octokit/types", "npm:13.6.1"],\
+          ["@octokit/types", "npm:13.6.2"],\
           ["universal-user-agent", "npm:6.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -189,7 +189,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@octokit/graphql", "npm:7.1.0"],\
           ["@octokit/request", "npm:8.4.0"],\
-          ["@octokit/types", "npm:13.6.1"],\
+          ["@octokit/types", "npm:13.6.2"],\
           ["universal-user-agent", "npm:6.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -264,7 +264,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/request", "npm:8.4.0"],\
           ["@octokit/endpoint", "npm:9.0.5"],\
           ["@octokit/request-error", "npm:5.1.0"],\
-          ["@octokit/types", "npm:13.6.1"],\
+          ["@octokit/types", "npm:13.6.2"],\
           ["universal-user-agent", "npm:6.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -275,7 +275,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@octokit-request-error-npm-5.1.0-f7282c5282-d03f9f7a40.zip/node_modules/@octokit/request-error/",\
         "packageDependencies": [\
           ["@octokit/request-error", "npm:5.1.0"],\
-          ["@octokit/types", "npm:13.6.1"],\
+          ["@octokit/types", "npm:13.6.2"],\
           ["deprecation", "npm:2.3.1"],\
           ["once", "npm:1.4.0"]\
         ],\
@@ -291,10 +291,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:13.6.1", {\
-        "packageLocation": "./.yarn/cache/@octokit-types-npm-13.6.1-c26cf13b0c-9ea6189839.zip/node_modules/@octokit/types/",\
+      ["npm:13.6.2", {\
+        "packageLocation": "./.yarn/cache/@octokit-types-npm-13.6.2-b4720742d0-8e614796f3.zip/node_modules/@octokit/types/",\
         "packageDependencies": [\
-          ["@octokit/types", "npm:13.6.1"],\
+          ["@octokit/types", "npm:13.6.2"],\
           ["@octokit/openapi-types", "npm:22.2.0"]\
         ],\
         "linkType": "HARD"\
