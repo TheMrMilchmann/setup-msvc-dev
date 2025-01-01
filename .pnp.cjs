@@ -29,7 +29,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/core", "npm:1.11.1"],\
           ["@actions/github", "npm:6.0.0"],\
-          ["@types/node", "npm:20.17.10"],\
+          ["@types/node", "npm:20.17.11"],\
           ["@vercel/ncc", "npm:0.38.3"],\
           ["typescript", "patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"]\
         ],\
@@ -320,10 +320,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:20.17.10", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-20.17.10-0c13d298c2-9a1bcb2f25.zip/node_modules/@types/node/",\
+      ["npm:20.17.11", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.17.11-26be9e64df-286ee7f9ae.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:20.17.10"],\
+          ["@types/node", "npm:20.17.11"],\
           ["undici-types", "npm:6.19.8"]\
         ],\
         "linkType": "HARD"\
@@ -1012,7 +1012,7 @@ const RAW_RUNTIME_STATE =
           ["setup-msvc-dev", "workspace:."],\
           ["@actions/core", "npm:1.11.1"],\
           ["@actions/github", "npm:6.0.0"],\
-          ["@types/node", "npm:20.17.10"],\
+          ["@types/node", "npm:20.17.11"],\
           ["@vercel/ncc", "npm:0.38.3"],\
           ["typescript", "patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"]\
         ],\
@@ -6906,18 +6906,20 @@ Require stack:
     }
     return false;
   };
-  const originalExtensionJSFunction = require$$0.Module._extensions[`.js`];
-  require$$0.Module._extensions[`.js`] = function(module, filename) {
-    if (filename.endsWith(`.js`)) {
-      const pkg = readPackageScope(filename);
-      if (pkg && pkg.data?.type === `module`) {
-        const err = ERR_REQUIRE_ESM(filename, module.parent?.filename);
-        Error.captureStackTrace(err);
-        throw err;
+  if (!process.features.require_module) {
+    const originalExtensionJSFunction = require$$0.Module._extensions[`.js`];
+    require$$0.Module._extensions[`.js`] = function(module, filename) {
+      if (filename.endsWith(`.js`)) {
+        const pkg = readPackageScope(filename);
+        if (pkg && pkg.data?.type === `module`) {
+          const err = ERR_REQUIRE_ESM(filename, module.parent?.filename);
+          Error.captureStackTrace(err);
+          throw err;
+        }
       }
-    }
-    originalExtensionJSFunction.call(this, module, filename);
-  };
+      originalExtensionJSFunction.call(this, module, filename);
+    };
+  }
   const originalDlopen = process.dlopen;
   process.dlopen = function(...args) {
     const [module, filename, ...rest] = args;
