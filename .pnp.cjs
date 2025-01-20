@@ -76,7 +76,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/http-client", "npm:2.2.3"],\
           ["tunnel", "npm:0.0.6"],\
-          ["undici", "npm:5.28.4"]\
+          ["undici", "npm:5.28.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -175,7 +175,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/graphql", "npm:7.1.0"],\
           ["@octokit/request", "npm:8.4.0"],\
           ["@octokit/request-error", "npm:5.1.0"],\
-          ["@octokit/types", "npm:13.6.2"],\
+          ["@octokit/types", "npm:13.7.0"],\
           ["before-after-hook", "npm:2.2.3"],\
           ["universal-user-agent", "npm:6.0.1"]\
         ],\
@@ -187,7 +187,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@octokit-endpoint-npm-9.0.5-9f96e75a5d-212122f653.zip/node_modules/@octokit/endpoint/",\
         "packageDependencies": [\
           ["@octokit/endpoint", "npm:9.0.5"],\
-          ["@octokit/types", "npm:13.6.2"],\
+          ["@octokit/types", "npm:13.7.0"],\
           ["universal-user-agent", "npm:6.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -199,7 +199,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@octokit/graphql", "npm:7.1.0"],\
           ["@octokit/request", "npm:8.4.0"],\
-          ["@octokit/types", "npm:13.6.2"],\
+          ["@octokit/types", "npm:13.7.0"],\
           ["universal-user-agent", "npm:6.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -213,10 +213,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:22.2.0", {\
-        "packageLocation": "./.yarn/cache/@octokit-openapi-types-npm-22.2.0-ce9f704019-0471b0c789.zip/node_modules/@octokit/openapi-types/",\
+      ["npm:23.0.1", {\
+        "packageLocation": "./.yarn/cache/@octokit-openapi-types-npm-23.0.1-9110a4ae43-2647ae16bc.zip/node_modules/@octokit/openapi-types/",\
         "packageDependencies": [\
-          ["@octokit/openapi-types", "npm:22.2.0"]\
+          ["@octokit/openapi-types", "npm:23.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -274,7 +274,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/request", "npm:8.4.0"],\
           ["@octokit/endpoint", "npm:9.0.5"],\
           ["@octokit/request-error", "npm:5.1.0"],\
-          ["@octokit/types", "npm:13.6.2"],\
+          ["@octokit/types", "npm:13.7.0"],\
           ["universal-user-agent", "npm:6.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -285,7 +285,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@octokit-request-error-npm-5.1.0-f7282c5282-d03f9f7a40.zip/node_modules/@octokit/request-error/",\
         "packageDependencies": [\
           ["@octokit/request-error", "npm:5.1.0"],\
-          ["@octokit/types", "npm:13.6.2"],\
+          ["@octokit/types", "npm:13.7.0"],\
           ["deprecation", "npm:2.3.1"],\
           ["once", "npm:1.4.0"]\
         ],\
@@ -301,11 +301,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:13.6.2", {\
-        "packageLocation": "./.yarn/cache/@octokit-types-npm-13.6.2-b4720742d0-8e614796f3.zip/node_modules/@octokit/types/",\
+      ["npm:13.7.0", {\
+        "packageLocation": "./.yarn/cache/@octokit-types-npm-13.7.0-be127099e2-2c5f42b727.zip/node_modules/@octokit/types/",\
         "packageDependencies": [\
-          ["@octokit/types", "npm:13.6.2"],\
-          ["@octokit/openapi-types", "npm:22.2.0"]\
+          ["@octokit/types", "npm:13.7.0"],\
+          ["@octokit/openapi-types", "npm:23.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1172,10 +1172,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:5.28.4", {\
-        "packageLocation": "./.yarn/cache/undici-npm-5.28.4-63fa65e206-a666a9f5ac.zip/node_modules/undici/",\
+      ["npm:5.28.5", {\
+        "packageLocation": "./.yarn/cache/undici-npm-5.28.5-52b9d359fd-459cd84ab7.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:5.28.4"],\
+          ["undici", "npm:5.28.5"],\
           ["@fastify/busboy", "npm:2.1.1"]\
         ],\
         "linkType": "HARD"\
