@@ -152,7 +152,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@npmcli-fs-npm-4.0.0-1d9cc8a27b-405c4490e1.zip/node_modules/@npmcli/fs/",\
         "packageDependencies": [\
           ["@npmcli/fs", "npm:4.0.0"],\
-          ["semver", "npm:7.7.0"]\
+          ["semver", "npm:7.7.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -565,10 +565,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["exponential-backoff", [\
-      ["npm:3.1.1", {\
-        "packageLocation": "./.yarn/cache/exponential-backoff-npm-3.1.1-04df458b30-2d9bbb6473.zip/node_modules/exponential-backoff/",\
+      ["npm:3.1.2", {\
+        "packageLocation": "./.yarn/cache/exponential-backoff-npm-3.1.2-e030c582de-ca2f01f1aa.zip/node_modules/exponential-backoff/",\
         "packageDependencies": [\
-          ["exponential-backoff", "npm:3.1.1"]\
+          ["exponential-backoff", "npm:3.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -877,13 +877,13 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["node-gyp", "npm:11.0.0"],\
           ["env-paths", "npm:2.2.1"],\
-          ["exponential-backoff", "npm:3.1.1"],\
+          ["exponential-backoff", "npm:3.1.2"],\
           ["glob", "npm:10.4.5"],\
           ["graceful-fs", "npm:4.2.11"],\
           ["make-fetch-happen", "npm:14.0.3"],\
           ["nopt", "npm:8.1.0"],\
           ["proc-log", "npm:5.0.0"],\
-          ["semver", "npm:7.7.0"],\
+          ["semver", "npm:7.7.1"],\
           ["tar", "npm:7.4.3"],\
           ["which", "npm:5.0.0"]\
         ],\
@@ -997,10 +997,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["semver", [\
-      ["npm:7.7.0", {\
-        "packageLocation": "./.yarn/cache/semver-npm-7.7.0-2100277c86-5d615860a5.zip/node_modules/semver/",\
+      ["npm:7.7.1", {\
+        "packageLocation": "./.yarn/cache/semver-npm-7.7.1-4572475307-4cfa1eb91e.zip/node_modules/semver/",\
         "packageDependencies": [\
-          ["semver", "npm:7.7.0"]\
+          ["semver", "npm:7.7.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1057,10 +1057,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["socks", [\
-      ["npm:2.8.3", {\
-        "packageLocation": "./.yarn/cache/socks-npm-2.8.3-3532b59899-ffcb622c22.zip/node_modules/socks/",\
+      ["npm:2.8.4", {\
+        "packageLocation": "./.yarn/cache/socks-npm-2.8.4-8194b86bd0-ab3af97aeb.zip/node_modules/socks/",\
         "packageDependencies": [\
-          ["socks", "npm:2.8.3"],\
+          ["socks", "npm:2.8.4"],\
           ["ip-address", "npm:9.0.5"],\
           ["smart-buffer", "npm:4.2.0"]\
         ],\
@@ -1074,7 +1074,7 @@ const RAW_RUNTIME_STATE =
           ["socks-proxy-agent", "npm:8.0.5"],\
           ["agent-base", "npm:7.1.3"],\
           ["debug", "virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.0"],\
-          ["socks", "npm:2.8.3"]\
+          ["socks", "npm:2.8.4"]\
         ],\
         "linkType": "HARD"\
       }]\
