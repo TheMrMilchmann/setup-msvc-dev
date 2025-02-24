@@ -172,7 +172,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@octokit/core", "npm:5.2.0"],\
           ["@octokit/auth-token", "npm:4.0.0"],\
-          ["@octokit/graphql", "npm:7.1.0"],\
+          ["@octokit/graphql", "npm:7.1.1"],\
           ["@octokit/request", "npm:8.4.1"],\
           ["@octokit/request-error", "npm:5.1.1"],\
           ["@octokit/types", "npm:13.8.0"],\
@@ -194,10 +194,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@octokit/graphql", [\
-      ["npm:7.1.0", {\
-        "packageLocation": "./.yarn/cache/@octokit-graphql-npm-7.1.0-9956e50359-da6857a69d.zip/node_modules/@octokit/graphql/",\
+      ["npm:7.1.1", {\
+        "packageLocation": "./.yarn/cache/@octokit-graphql-npm-7.1.1-04e1c9067d-9a7a65fa84.zip/node_modules/@octokit/graphql/",\
         "packageDependencies": [\
-          ["@octokit/graphql", "npm:7.1.0"],\
+          ["@octokit/graphql", "npm:7.1.1"],\
           ["@octokit/request", "npm:8.4.1"],\
           ["@octokit/types", "npm:13.8.0"],\
           ["universal-user-agent", "npm:6.0.1"]\
