@@ -1,3 +1,6 @@
 {
-    "extends": ["github>TheMrMilchmann/.github//.github/renovate.json5"]
+    extends: ["github>TheMrMilchmann/.github//.github/renovate.json5"],
+    lockFileMaintenance: {
+        automerge: true
+    }
 }
