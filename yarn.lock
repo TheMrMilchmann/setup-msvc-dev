@@ -235,12 +235,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.17.4":
-  version: 20.19.10
-  resolution: "@types/node@npm:20.19.10"
+"@types/node@npm:^22.0.0":
+  version: 22.17.1
+  resolution: "@types/node@npm:22.17.1"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/4324ad83555b2db0393311b0267fa06e4be0029a2bc51778e179dbdad8fdaad582d0f24e803db872dce8e879fff4c88739f67183e45095b5da6d06ca25a29980
+  checksum: 10/775d3996693ce2e717267c810669a8122308676487130c91590022ded38a999fef63fd63b4631fdbbceeea9470f0ecf6a2333a3abbc4f917f40b404bbb57e9bc
   languageName: node
   linkType: hard
 
@@ -852,7 +852,7 @@ __metadata:
   dependencies:
     "@actions/core": "npm:^1.10.1"
     "@actions/github": "npm:^6.0.0"
-    "@types/node": "npm:^20.17.4"
+    "@types/node": "npm:^22.0.0"
     "@vercel/ncc": "npm:^0.38.1"
     typescript: "npm:^5.6.2"
   languageName: unknown
