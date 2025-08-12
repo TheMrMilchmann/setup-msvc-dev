@@ -1,5 +1,4 @@
 name: CI
-
 on:
   push:
     branches-ignore:
@@ -12,11 +11,9 @@ on:
     paths-ignore:
       - '**.md'
 
-
 env:
   WORKSPACE_ARCHIVE: workspace.tar
   WORKSPACE_ARTIFACT: build-results
-
 
 jobs:
   build:
@@ -40,7 +37,6 @@ jobs:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: ${{ env.WORKSPACE_ARCHIVE }}
           retention-days: 1
-
 
   test-vcvarsall-invocation:
     name: Test Developer Command Prompt Setup (${{ matrix.arch }}) - ${{ matrix.os }}
@@ -73,7 +69,6 @@ jobs:
         run: |
           where cl.exe
           IF ERRORLEVEL 1 exit ERRORLEVEL
-
 
   test-path-exports:
     name: Test exporting tool paths - ${{ matrix.os }}
@@ -109,7 +104,6 @@ jobs:
         shell: cmd
         run: IF NOT EXIST "%PATH_TO_VS%" exit 1
 
-
   # So, what's happening here?
   #
   # Basically, restoring the workspace state between jobs is incredibly annoying.
@@ -129,6 +123,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Cleanup
-        uses: GeekyEggo/delete-artifact@f275313e70c08f6120db482d7a6b98377786765b
+        uses: GeekyEggo/delete-artifact@f275313e70c08f6120db482d7a6b98377786765b # v5
         with:
           name: ${{ env.workspace_artifact }}

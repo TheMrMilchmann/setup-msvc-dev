@@ -1,15 +1,12 @@
 name: Publish
 on: workflow_dispatch
 
-
 concurrency:
   group: publish-${{ github.ref }}
-
 
 env:
   WORKSPACE_ARCHIVE: workspace.tar
   WORKSPACE_ARTIFACT: build-results
-
 
 jobs:
   build:
@@ -36,7 +33,6 @@ jobs:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: ${{ env.WORKSPACE_ARCHIVE }}
           retention-days: 1
-
 
   test-vcvarsall-invocation:
     name: Test Developer Command Prompt Setup (${{ matrix.arch }}) - ${{ matrix.os }}
@@ -69,7 +65,6 @@ jobs:
         run: |
           where cl.exe
           IF ERRORLEVEL 1 exit ERRORLEVEL
-
 
   test-path-exports:
     name: Test exporting tool paths - ${{ matrix.os }}
@@ -104,7 +99,6 @@ jobs:
       - name: 'Verify path to VS'
         shell: cmd
         run: IF NOT EXIST "%PATH_TO_VS%" exit 1
-
 
   publish:
     name: Publish
@@ -162,7 +156,6 @@ jobs:
           git tag v$RELEASE_VERSION
           git push -u origin HEAD:$RELEASE_VERSION_MAJOR --tags
           popd
-
 
   # So, what's happening here?
   #
