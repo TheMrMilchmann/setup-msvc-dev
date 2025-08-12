@@ -10,6 +10,8 @@ on:
       - 'v*'
     paths-ignore:
       - '**.md'
+permissions:
+  contents: read
 
 env:
   WORKSPACE_ARCHIVE: workspace.tar
