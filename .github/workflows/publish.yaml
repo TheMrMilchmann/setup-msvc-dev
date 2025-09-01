@@ -1,0 +1,183 @@
+name: Publish
+on: workflow_dispatch
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-${{ github.ref }}
+
+env:
+  WORKSPACE_ARCHIVE: workspace.tar
+  WORKSPACE_ARTIFACT: build-results
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version-file: "package.json"
+          cache: "yarn"
+
+      - name: Yarn build
+        run: yarn build
+
+      - name: Tar files
+        run: tar -cvf ${{ env.WORKSPACE_ARCHIVE }} .
+
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: ${{ env.WORKSPACE_ARTIFACT }}
+          path: ${{ env.WORKSPACE_ARCHIVE }}
+          retention-days: 1
+
+  test-vcvarsall-invocation:
+    name: Test Developer Command Prompt Setup (${{ matrix.arch }}) - ${{ matrix.os }}
+    needs: build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-2022, windows-2025]
+        arch: [x64, x32, x86_arm, x86_arm64]
+    steps:
+      - name: Checkout
+        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
+        with:
+          name: ${{ env.WORKSPACE_ARTIFACT }}
+          path: .
+
+      - name: Untar
+        run: |
+          tar -xvf ${{ env.WORKSPACE_ARCHIVE }}
+          rm ${{ env.WORKSPACE_ARCHIVE }}
+
+      - name: setup-msvc-dev
+        uses: ./
+        with:
+          arch: ${{ matrix.arch }}
+
+      - name: 'Verify cl.exe'
+        shell: cmd
+        run: |
+          where cl.exe
+          IF ERRORLEVEL 1 exit ERRORLEVEL
+
+  test-path-exports:
+    name: Test exporting tool paths - ${{ matrix.os }}
+    needs: build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-2022, windows-2025]
+    steps:
+      - name: Checkout
+        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
+        with:
+          name: ${{ env.WORKSPACE_ARTIFACT }}
+          path: .
+
+      - name: Untar
+        run: |
+          tar -xvf ${{ env.WORKSPACE_ARCHIVE }}
+          rm ${{ env.WORKSPACE_ARCHIVE }}
+
+      - name: setup-msvc-dev
+        uses: ./
+        with:
+          export-path-to-vcvarsall: PATH_TO_VCVARSALL
+          export-path-to-vs: PATH_TO_VS
+
+      - name: 'Verify path to vcvarsall.bat'
+        shell: cmd
+        run: IF NOT EXIST "%PATH_TO_VCVARSALL%\vcvarsall.bat" exit 1
+
+      - name: 'Verify path to VS'
+        shell: cmd
+        run: IF NOT EXIST "%PATH_TO_VS%" exit 1
+
+  publish:
+    name: Publish
+    needs: ["build", "test-vcvarsall-invocation", "test-path-exports"]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
+        with:
+          name: ${{ env.WORKSPACE_ARTIFACT }}
+          path: .
+
+      - name: Untar
+        run: |
+          tar -xvf ${{ env.WORKSPACE_ARCHIVE }}
+          rm ${{ env.WORKSPACE_ARCHIVE }}
+
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "20.x"
+          cache: "yarn"
+
+      - run: |
+          VERSION=`npm pkg get version`
+          VERSION=`sed -e 's/^"//' -e 's/"$//' <<<"$VERSION"`
+          echo RELEASE_VERSION=$VERSION >> $GITHUB_ENV
+          echo "RELEASE_VERSION_MAJOR=v${VERSION%%.*}" >> $GITHUB_ENV
+
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+        with:
+          fetch-depth: 0
+          ref: ${{ env.RELEASE_VERSION_MAJOR }}
+          path: "release"
+        id: checkoutrelease
+        continue-on-error: true
+
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+        if: steps.checkoutrelease.outcome != 'success'
+        with:
+          path: "release"
+
+      - name: Commit and push release
+        run: |
+          pushd .
+          cd release
+          git restore --source=origin/master -SW .
+          cp -a ../dist/. dist
+          git add -f dist/**
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git commit -m "Release $RELEASE_VERSION"
+          git tag v$RELEASE_VERSION
+          git push -u origin HEAD:$RELEASE_VERSION_MAJOR --tags
+          popd
+
+  # So, what's happening here?
+  #
+  # Basically, restoring the workspace state between jobs is incredibly annoying.
+  # We can get reasonable support by using the upload-/download-artifact
+  # actions, but they suffer from a severe limitation:
+  # GH Actions has a storage limit and the minimum retention is 24 hours...
+  #
+  # Since the storage quota is limited, we have to make sure that the artifact
+  # is removed. Unfortunately, there is no official way to do this, so we resort
+  # to a third party action for now.
+  #
+  # See also: https://github.com/actions/upload-artifact/issues/290
+  cleanup:
+    name: Cleanup
+    if: ${{ always() }}
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cleanup
+        uses: GeekyEggo/delete-artifact@f275313e70c08f6120db482d7a6b98377786765b # v5
+        with:
+          name: ${{ env.workspace_artifact }}

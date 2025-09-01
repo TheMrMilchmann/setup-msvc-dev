@@ -1,3 +1,14 @@
+### 3.0.2
+
+_Released 2025 Sep 01_
+
+#### Overview
+
+This is a maintenance release only and does not contain any behavioral change.
+
+
+---
+
 ### 3.0.1
 
 _Released 2024 Jul 04_

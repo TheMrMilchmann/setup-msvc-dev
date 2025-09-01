@@ -62,7 +62,7 @@ To get an overview about the action's versions, see the [changelog](docs/changel
 
 ```
 Copyright (c) 2019 ilammy
-Copyright (c) 2021-2023 Leon Linhart
+Copyright (c) 2021-2024 Leon Linhart
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
