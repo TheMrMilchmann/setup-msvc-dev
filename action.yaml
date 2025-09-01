@@ -27,7 +27,7 @@ inputs:
     description: 'The environment variable to store the path to the Visual Studio installation in'
     required: false
 runs:
-  using: 'node20'
+  using: 'node24'
   main: 'dist/index.js'
 branding:
   icon: terminal
