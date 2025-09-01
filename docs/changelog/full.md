@@ -1,3 +1,16 @@
+### 4.0.0
+
+_Released 2025 Sep 01_
+
+#### Improvements
+
+- Updated to the node24 runtime by default.
+    - This requires a minimum [Actions Runner](https://github.com/actions/runner/releases/tag/v2.327.1)
+      version of v2.327.1 to run.
+
+
+---
+
 ### 3.0.2
 
 _Released 2025 Sep 01_
