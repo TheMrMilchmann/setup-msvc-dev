@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
 
       - name: Setup Node
-        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
           node-version-file: "package.json"
           cache: "yarn"
@@ -30,7 +30,7 @@ jobs:
       - name: Tar files
         run: tar -cvf ${{ env.WORKSPACE_ARCHIVE }} .
 
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: ${{ env.WORKSPACE_ARCHIVE }}
@@ -47,7 +47,7 @@ jobs:
         arch: [x64, x32, x86_arm, x86_arm64]
     steps:
       - name: Checkout
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
+        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5.0.0
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: .
@@ -78,7 +78,7 @@ jobs:
         os: [windows-2022, windows-2025]
     steps:
       - name: Checkout
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
+        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5.0.0
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: .
@@ -110,7 +110,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
+        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5.0.0
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: .
@@ -121,7 +121,7 @@ jobs:
           rm ${{ env.WORKSPACE_ARCHIVE }}
 
       - name: Setup Node
-        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
           node-version-file: "package.json"
           cache: "yarn"
@@ -132,7 +132,7 @@ jobs:
           echo RELEASE_VERSION=$VERSION >> $GITHUB_ENV
           echo "RELEASE_VERSION_MAJOR=v${VERSION%%.*}" >> $GITHUB_ENV
 
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           fetch-depth: 0
           ref: ${{ env.RELEASE_VERSION_MAJOR }}
@@ -140,7 +140,7 @@ jobs:
         id: checkoutrelease
         continue-on-error: true
 
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         if: steps.checkoutrelease.outcome != 'success'
         with:
           path: "release"
@@ -178,6 +178,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Cleanup
-        uses: GeekyEggo/delete-artifact@f275313e70c08f6120db482d7a6b98377786765b # v5
+        uses: GeekyEggo/delete-artifact@f275313e70c08f6120db482d7a6b98377786765b # v5.1.0
         with:
           name: ${{ env.workspace_artifact }}
