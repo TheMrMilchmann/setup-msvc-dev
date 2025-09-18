@@ -31,7 +31,7 @@ const RAW_RUNTIME_STATE =
           ["@actions/core", "npm:1.11.1"],\
           ["@actions/github", "npm:6.0.1"],\
           ["@types/node", "npm:24.5.2"],\
-          ["@vercel/ncc", "npm:0.38.3"],\
+          ["@vercel/ncc", "npm:0.38.4"],\
           ["setup-msvc-dev", "workspace:."],\
           ["typescript", "patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"]\
         ],\
@@ -335,10 +335,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@vercel/ncc", [\
-      ["npm:0.38.3", {\
-        "packageLocation": "./.yarn/cache/@vercel-ncc-npm-0.38.3-cb2c08b26f-f1a05a58e9.zip/node_modules/@vercel/ncc/",\
+      ["npm:0.38.4", {\
+        "packageLocation": "./.yarn/cache/@vercel-ncc-npm-0.38.4-c7f6d7c3e6-06561fb3fd.zip/node_modules/@vercel/ncc/",\
         "packageDependencies": [\
-          ["@vercel/ncc", "npm:0.38.3"],\
+          ["@vercel/ncc", "npm:0.38.4"],\
           ["node-gyp", "npm:11.4.2"]\
         ],\
         "linkType": "HARD"\
@@ -1026,7 +1026,7 @@ const RAW_RUNTIME_STATE =
           ["@actions/core", "npm:1.11.1"],\
           ["@actions/github", "npm:6.0.1"],\
           ["@types/node", "npm:24.5.2"],\
-          ["@vercel/ncc", "npm:0.38.3"],\
+          ["@vercel/ncc", "npm:0.38.4"],\
           ["setup-msvc-dev", "workspace:."],\
           ["typescript", "patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"]\
         ],\
@@ -6611,7 +6611,8 @@ class ZipFS extends BasePortableFakeFS {
         const entries = Array.from(directoryListing, (name) => {
           return Object.assign(this.statImpl(`lstat`, ppath.join(p, name)), {
             name,
-            path: PortablePath.dot
+            path: PortablePath.dot,
+            parentPath: PortablePath.dot
           });
         });
         for (const entry of entries) {
@@ -6622,7 +6623,8 @@ class ZipFS extends BasePortableFakeFS {
           for (const child of subListing) {
             entries.push(Object.assign(this.statImpl(`lstat`, ppath.join(p, subPath, child)), {
               name: child,
-              path: subPath
+              path: subPath,
+              parentPath: subPath
             }));
           }
         }
@@ -6643,7 +6645,8 @@ class ZipFS extends BasePortableFakeFS {
       return Array.from(directoryListing, (name) => {
         return Object.assign(this.statImpl(`lstat`, ppath.join(p, name)), {
           name,
-          path: void 0
+          path: void 0,
+          parentPath: void 0
         });
       });
     } else {
