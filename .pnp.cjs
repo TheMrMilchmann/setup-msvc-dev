@@ -30,7 +30,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/core", "npm:1.11.1"],\
           ["@actions/github", "npm:6.0.1"],\
-          ["@types/node", "npm:24.6.2"],\
+          ["@types/node", "npm:24.7.0"],\
           ["@vercel/ncc", "npm:0.38.4"],\
           ["setup-msvc-dev", "workspace:."],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
@@ -325,11 +325,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:24.6.2", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-24.6.2-22876fbd21-8d1e64b37a.zip/node_modules/@types/node/",\
+      ["npm:24.7.0", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-24.7.0-fa253cad8d-db0b77e9b1.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:24.6.2"],\
-          ["undici-types", "npm:7.13.0"]\
+          ["@types/node", "npm:24.7.0"],\
+          ["undici-types", "npm:7.14.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1016,7 +1016,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/core", "npm:1.11.1"],\
           ["@actions/github", "npm:6.0.1"],\
-          ["@types/node", "npm:24.6.2"],\
+          ["@types/node", "npm:24.7.0"],\
           ["@vercel/ncc", "npm:0.38.4"],\
           ["setup-msvc-dev", "workspace:."],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
@@ -1188,10 +1188,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici-types", [\
-      ["npm:7.13.0", {\
-        "packageLocation": "./.yarn/cache/undici-types-npm-7.13.0-df78d4ea2d-1088ad68dd.zip/node_modules/undici-types/",\
+      ["npm:7.14.0", {\
+        "packageLocation": "./.yarn/cache/undici-types-npm-7.14.0-d9eb643e6a-0f8709b214.zip/node_modules/undici-types/",\
         "packageDependencies": [\
-          ["undici-types", "npm:7.13.0"]\
+          ["undici-types", "npm:7.14.0"]\
         ],\
         "linkType": "HARD"\
       }]\
