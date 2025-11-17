@@ -739,21 +739,21 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["make-fetch-happen", [\
-      ["npm:15.0.2", {\
-        "packageLocation": "./.yarn/cache/make-fetch-happen-npm-15.0.2-53d5a83906-66097eae91.zip/node_modules/make-fetch-happen/",\
+      ["npm:15.0.3", {\
+        "packageLocation": "./.yarn/cache/make-fetch-happen-npm-15.0.3-10a832fcad-78da4fc1df.zip/node_modules/make-fetch-happen/",\
         "packageDependencies": [\
           ["@npmcli/agent", "npm:4.0.0"],\
           ["cacache", "npm:20.0.1"],\
           ["http-cache-semantics", "npm:4.2.0"],\
-          ["make-fetch-happen", "npm:15.0.2"],\
+          ["make-fetch-happen", "npm:15.0.3"],\
           ["minipass", "npm:7.1.2"],\
-          ["minipass-fetch", "npm:4.0.1"],\
+          ["minipass-fetch", "npm:5.0.0"],\
           ["minipass-flush", "npm:1.0.5"],\
           ["minipass-pipeline", "npm:1.2.4"],\
           ["negotiator", "npm:1.0.0"],\
-          ["proc-log", "npm:5.0.0"],\
+          ["proc-log", "npm:6.0.0"],\
           ["promise-retry", "npm:2.0.1"],\
-          ["ssri", "npm:12.0.0"]\
+          ["ssri", "npm:13.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -796,12 +796,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["minipass-fetch", [\
-      ["npm:4.0.1", {\
-        "packageLocation": "./.yarn/cache/minipass-fetch-npm-4.0.1-ce1d15e957-7ddfebdbb8.zip/node_modules/minipass-fetch/",\
+      ["npm:5.0.0", {\
+        "packageLocation": "./.yarn/cache/minipass-fetch-npm-5.0.0-e53c2bae4c-4fb7dca630.zip/node_modules/minipass-fetch/",\
         "packageDependencies": [\
           ["encoding", "npm:0.1.13"],\
           ["minipass", "npm:7.1.2"],\
-          ["minipass-fetch", "npm:4.0.1"],\
+          ["minipass-fetch", "npm:5.0.0"],\
           ["minipass-sized", "npm:1.0.3"],\
           ["minizlib", "npm:3.1.0"]\
         ],\
@@ -873,7 +873,7 @@ const RAW_RUNTIME_STATE =
           ["env-paths", "npm:2.2.1"],\
           ["exponential-backoff", "npm:3.1.3"],\
           ["graceful-fs", "npm:4.2.11"],\
-          ["make-fetch-happen", "npm:15.0.2"],\
+          ["make-fetch-happen", "npm:15.0.3"],\
           ["node-gyp", "npm:12.1.0"],\
           ["nopt", "npm:9.0.0"],\
           ["proc-log", "npm:6.0.0"],\
@@ -953,13 +953,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["proc-log", [\
-      ["npm:5.0.0", {\
-        "packageLocation": "./.yarn/cache/proc-log-npm-5.0.0-405173f9b4-35610bdb01.zip/node_modules/proc-log/",\
-        "packageDependencies": [\
-          ["proc-log", "npm:5.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:6.0.0", {\
         "packageLocation": "./.yarn/cache/proc-log-npm-6.0.0-455d6f01a6-98831f35d3.zip/node_modules/proc-log/",\
         "packageDependencies": [\
@@ -1086,6 +1079,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["minipass", "npm:7.1.2"],\
           ["ssri", "npm:12.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:13.0.0", {\
+        "packageLocation": "./.yarn/cache/ssri-npm-13.0.0-f5fa93375d-fd59bfedf0.zip/node_modules/ssri/",\
+        "packageDependencies": [\
+          ["minipass", "npm:7.1.2"],\
+          ["ssri", "npm:13.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
