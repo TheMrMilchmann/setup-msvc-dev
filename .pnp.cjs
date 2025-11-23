@@ -421,7 +421,7 @@ const RAW_RUNTIME_STATE =
           ["@npmcli/fs", "npm:4.0.0"],\
           ["cacache", "npm:20.0.1"],\
           ["fs-minipass", "npm:3.0.3"],\
-          ["glob", "npm:11.0.3"],\
+          ["glob", "npm:11.1.0"],\
           ["lru-cache", "npm:11.2.2"],\
           ["minipass", "npm:7.1.2"],\
           ["minipass-collect", "npm:2.0.1"],\
@@ -612,11 +612,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["glob", [\
-      ["npm:11.0.3", {\
-        "packageLocation": "./.yarn/cache/glob-npm-11.0.3-f68382b3cc-2ae536c136.zip/node_modules/glob/",\
+      ["npm:11.1.0", {\
+        "packageLocation": "./.yarn/cache/glob-npm-11.1.0-9420ed5efe-da45018196.zip/node_modules/glob/",\
         "packageDependencies": [\
           ["foreground-child", "npm:3.3.1"],\
-          ["glob", "npm:11.0.3"],\
+          ["glob", "npm:11.1.0"],\
           ["jackspeak", "npm:4.1.1"],\
           ["minimatch", "npm:10.1.1"],\
           ["minipass", "npm:7.1.2"],\
