@@ -28,7 +28,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:1.11.1"],\
+          ["@actions/core", "npm:2.0.0"],\
           ["@actions/github", "npm:6.0.1"],\
           ["@types/node", "npm:24.10.2"],\
           ["@vercel/ncc", "npm:0.38.4"],\
@@ -39,12 +39,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@actions/core", [\
-      ["npm:1.11.1", {\
-        "packageLocation": "./.yarn/cache/@actions-core-npm-1.11.1-ad090a2026-94f260e336.zip/node_modules/@actions/core/",\
+      ["npm:2.0.0", {\
+        "packageLocation": "./.yarn/cache/@actions-core-npm-2.0.0-6b7116ca4c-051190c962.zip/node_modules/@actions/core/",\
         "packageDependencies": [\
-          ["@actions/core", "npm:1.11.1"],\
+          ["@actions/core", "npm:2.0.0"],\
           ["@actions/exec", "npm:1.1.1"],\
-          ["@actions/http-client", "npm:2.2.3"]\
+          ["@actions/http-client", "npm:3.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -80,6 +80,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@actions-http-client-npm-2.2.3-628748e0a3-0c0a540c79.zip/node_modules/@actions/http-client/",\
         "packageDependencies": [\
           ["@actions/http-client", "npm:2.2.3"],\
+          ["tunnel", "npm:0.0.6"],\
+          ["undici", "npm:5.29.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:3.0.0", {\
+        "packageLocation": "./.yarn/cache/@actions-http-client-npm-3.0.0-517163f9d7-7ed597cf91.zip/node_modules/@actions/http-client/",\
+        "packageDependencies": [\
+          ["@actions/http-client", "npm:3.0.0"],\
           ["tunnel", "npm:0.0.6"],\
           ["undici", "npm:5.29.0"]\
         ],\
@@ -832,7 +841,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:1.11.1"],\
+          ["@actions/core", "npm:2.0.0"],\
           ["@actions/github", "npm:6.0.1"],\
           ["@types/node", "npm:24.10.2"],\
           ["@vercel/ncc", "npm:0.38.4"],\
