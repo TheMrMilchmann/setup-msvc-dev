@@ -28,7 +28,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.0"],\
+          ["@actions/core", "npm:2.0.1"],\
           ["@actions/github", "npm:6.0.1"],\
           ["@types/node", "npm:24.10.3"],\
           ["@vercel/ncc", "npm:0.38.4"],\
@@ -39,22 +39,22 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@actions/core", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "./.yarn/cache/@actions-core-npm-2.0.0-6b7116ca4c-051190c962.zip/node_modules/@actions/core/",\
+      ["npm:2.0.1", {\
+        "packageLocation": "./.yarn/cache/@actions-core-npm-2.0.1-46e8d2e2b0-a3376a8988.zip/node_modules/@actions/core/",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.0"],\
-          ["@actions/exec", "npm:1.1.1"],\
+          ["@actions/core", "npm:2.0.1"],\
+          ["@actions/exec", "npm:2.0.0"],\
           ["@actions/http-client", "npm:3.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@actions/exec", [\
-      ["npm:1.1.1", {\
-        "packageLocation": "./.yarn/cache/@actions-exec-npm-1.1.1-90973d2f96-c04bd25191.zip/node_modules/@actions/exec/",\
+      ["npm:2.0.0", {\
+        "packageLocation": "./.yarn/cache/@actions-exec-npm-2.0.0-6ca397f103-61f84e3920.zip/node_modules/@actions/exec/",\
         "packageDependencies": [\
-          ["@actions/exec", "npm:1.1.1"],\
-          ["@actions/io", "npm:1.1.3"]\
+          ["@actions/exec", "npm:2.0.0"],\
+          ["@actions/io", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -96,10 +96,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@actions/io", [\
-      ["npm:1.1.3", {\
-        "packageLocation": "./.yarn/cache/@actions-io-npm-1.1.3-82d1cf012b-4de44e8d42.zip/node_modules/@actions/io/",\
+      ["npm:2.0.0", {\
+        "packageLocation": "./.yarn/cache/@actions-io-npm-2.0.0-6dd9ad0ef0-4f8f98b564.zip/node_modules/@actions/io/",\
         "packageDependencies": [\
-          ["@actions/io", "npm:1.1.3"]\
+          ["@actions/io", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -841,7 +841,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.0"],\
+          ["@actions/core", "npm:2.0.1"],\
           ["@actions/github", "npm:6.0.1"],\
           ["@types/node", "npm:24.10.3"],\
           ["@vercel/ncc", "npm:0.38.4"],\
