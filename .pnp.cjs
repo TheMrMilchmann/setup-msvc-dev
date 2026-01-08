@@ -28,7 +28,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.1"],\
+          ["@actions/core", "npm:2.0.2"],\
           ["@actions/github", "npm:6.0.1"],\
           ["@types/node", "npm:24.10.4"],\
           ["@vercel/ncc", "npm:0.38.4"],\
@@ -39,12 +39,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@actions/core", [\
-      ["npm:2.0.1", {\
-        "packageLocation": "./.yarn/cache/@actions-core-npm-2.0.1-46e8d2e2b0-a3376a8988.zip/node_modules/@actions/core/",\
+      ["npm:2.0.2", {\
+        "packageLocation": "./.yarn/cache/@actions-core-npm-2.0.2-b089605850-37547d3668.zip/node_modules/@actions/core/",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.1"],\
+          ["@actions/core", "npm:2.0.2"],\
           ["@actions/exec", "npm:2.0.0"],\
-          ["@actions/http-client", "npm:3.0.0"]\
+          ["@actions/http-client", "npm:3.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -85,10 +85,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:3.0.0", {\
-        "packageLocation": "./.yarn/cache/@actions-http-client-npm-3.0.0-517163f9d7-7ed597cf91.zip/node_modules/@actions/http-client/",\
+      ["npm:3.0.1", {\
+        "packageLocation": "./.yarn/cache/@actions-http-client-npm-3.0.1-e9682f1a9b-aac5a88023.zip/node_modules/@actions/http-client/",\
         "packageDependencies": [\
-          ["@actions/http-client", "npm:3.0.0"],\
+          ["@actions/http-client", "npm:3.0.1"],\
           ["tunnel", "npm:0.0.6"],\
           ["undici", "npm:5.29.0"]\
         ],\
@@ -841,7 +841,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.1"],\
+          ["@actions/core", "npm:2.0.2"],\
           ["@actions/github", "npm:6.0.1"],\
           ["@types/node", "npm:24.10.4"],\
           ["@vercel/ncc", "npm:0.38.4"],\
