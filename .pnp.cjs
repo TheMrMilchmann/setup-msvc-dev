@@ -28,7 +28,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.2"],\
+          ["@actions/core", "npm:2.0.3"],\
           ["@actions/github", "npm:7.0.0"],\
           ["@types/node", "npm:24.10.9"],\
           ["@vercel/ncc", "npm:0.38.4"],\
@@ -39,12 +39,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@actions/core", [\
-      ["npm:2.0.2", {\
-        "packageLocation": "./.yarn/cache/@actions-core-npm-2.0.2-b089605850-37547d3668.zip/node_modules/@actions/core/",\
+      ["npm:2.0.3", {\
+        "packageLocation": "./.yarn/cache/@actions-core-npm-2.0.3-6dee896c8d-d7660656fd.zip/node_modules/@actions/core/",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.2"],\
+          ["@actions/core", "npm:2.0.3"],\
           ["@actions/exec", "npm:2.0.0"],\
-          ["@actions/http-client", "npm:3.0.1"]\
+          ["@actions/http-client", "npm:3.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -82,6 +82,15 @@ const RAW_RUNTIME_STATE =
           ["@actions/http-client", "npm:3.0.1"],\
           ["tunnel", "npm:0.0.6"],\
           ["undici", "npm:5.29.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:3.0.2", {\
+        "packageLocation": "./.yarn/cache/@actions-http-client-npm-3.0.2-3f9cdeb443-3643124554.zip/node_modules/@actions/http-client/",\
+        "packageDependencies": [\
+          ["@actions/http-client", "npm:3.0.2"],\
+          ["tunnel", "npm:0.0.6"],\
+          ["undici", "npm:6.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -832,7 +841,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.2"],\
+          ["@actions/core", "npm:2.0.3"],\
           ["@actions/github", "npm:7.0.0"],\
           ["@types/node", "npm:24.10.9"],\
           ["@vercel/ncc", "npm:0.38.4"],\
@@ -933,6 +942,13 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@fastify/busboy", "npm:2.1.1"],\
           ["undici", "npm:5.29.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:6.23.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-6.23.0-7da0e26771-56950995e7.zip/node_modules/undici/",\
+        "packageDependencies": [\
+          ["undici", "npm:6.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
