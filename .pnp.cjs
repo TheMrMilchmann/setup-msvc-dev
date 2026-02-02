@@ -300,7 +300,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@vercel-ncc-npm-0.38.4-c7f6d7c3e6-06561fb3fd.zip/node_modules/@vercel/ncc/",\
         "packageDependencies": [\
           ["@vercel/ncc", "npm:0.38.4"],\
-          ["node-gyp", "npm:12.1.0"]\
+          ["node-gyp", "npm:12.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -689,18 +689,18 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["node-gyp", [\
-      ["npm:12.1.0", {\
-        "packageLocation": "./.yarn/unplugged/node-gyp-npm-12.1.0-0690767ce9/node_modules/node-gyp/",\
+      ["npm:12.2.0", {\
+        "packageLocation": "./.yarn/unplugged/node-gyp-npm-12.2.0-11f8fe84f1/node_modules/node-gyp/",\
         "packageDependencies": [\
           ["env-paths", "npm:2.2.1"],\
           ["exponential-backoff", "npm:3.1.3"],\
           ["graceful-fs", "npm:4.2.11"],\
           ["make-fetch-happen", "npm:15.0.3"],\
-          ["node-gyp", "npm:12.1.0"],\
+          ["node-gyp", "npm:12.2.0"],\
           ["nopt", "npm:9.0.0"],\
           ["proc-log", "npm:6.1.0"],\
           ["semver", "npm:7.7.3"],\
-          ["tar", "npm:7.5.6"],\
+          ["tar", "npm:7.5.7"],\
           ["tinyglobby", "npm:0.2.15"],\
           ["which", "npm:6.0.0"]\
         ],\
@@ -850,14 +850,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["tar", [\
-      ["npm:7.5.6", {\
-        "packageLocation": "./.yarn/cache/tar-npm-7.5.6-955ec951c2-cf4a84d79b.zip/node_modules/tar/",\
+      ["npm:7.5.7", {\
+        "packageLocation": "./.yarn/cache/tar-npm-7.5.7-053aec5a88-0d6938dd32.zip/node_modules/tar/",\
         "packageDependencies": [\
           ["@isaacs/fs-minipass", "npm:4.0.1"],\
           ["chownr", "npm:3.0.0"],\
           ["minipass", "npm:7.1.2"],\
           ["minizlib", "npm:3.1.0"],\
-          ["tar", "npm:7.5.6"],\
+          ["tar", "npm:7.5.7"],\
           ["yallist", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
