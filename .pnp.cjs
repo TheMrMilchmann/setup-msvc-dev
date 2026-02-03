@@ -28,7 +28,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.3"],\
+          ["@actions/core", "npm:3.0.0"],\
           ["@actions/github", "npm:9.0.0"],\
           ["@types/node", "npm:24.10.10"],\
           ["@vercel/ncc", "npm:0.38.4"],\
@@ -39,22 +39,22 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@actions/core", [\
-      ["npm:2.0.3", {\
-        "packageLocation": "./.yarn/cache/@actions-core-npm-2.0.3-6dee896c8d-d7660656fd.zip/node_modules/@actions/core/",\
+      ["npm:3.0.0", {\
+        "packageLocation": "./.yarn/cache/@actions-core-npm-3.0.0-fbea614863-fddeebfaf6.zip/node_modules/@actions/core/",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.3"],\
-          ["@actions/exec", "npm:2.0.0"],\
-          ["@actions/http-client", "npm:3.0.2"]\
+          ["@actions/core", "npm:3.0.0"],\
+          ["@actions/exec", "npm:3.0.0"],\
+          ["@actions/http-client", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@actions/exec", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "./.yarn/cache/@actions-exec-npm-2.0.0-6ca397f103-61f84e3920.zip/node_modules/@actions/exec/",\
+      ["npm:3.0.0", {\
+        "packageLocation": "./.yarn/cache/@actions-exec-npm-3.0.0-fff0325d53-c1904163e3.zip/node_modules/@actions/exec/",\
         "packageDependencies": [\
-          ["@actions/exec", "npm:2.0.0"],\
-          ["@actions/io", "npm:2.0.0"]\
+          ["@actions/exec", "npm:3.0.0"],\
+          ["@actions/io", "npm:3.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -84,13 +84,22 @@ const RAW_RUNTIME_STATE =
           ["undici", "npm:6.23.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:4.0.0", {\
+        "packageLocation": "./.yarn/cache/@actions-http-client-npm-4.0.0-7a74e845d8-05f6061745.zip/node_modules/@actions/http-client/",\
+        "packageDependencies": [\
+          ["@actions/http-client", "npm:4.0.0"],\
+          ["tunnel", "npm:0.0.6"],\
+          ["undici", "npm:6.23.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@actions/io", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "./.yarn/cache/@actions-io-npm-2.0.0-6dd9ad0ef0-4f8f98b564.zip/node_modules/@actions/io/",\
+      ["npm:3.0.2", {\
+        "packageLocation": "./.yarn/cache/@actions-io-npm-3.0.2-1b05cb812b-ef17cb4ec0.zip/node_modules/@actions/io/",\
         "packageDependencies": [\
-          ["@actions/io", "npm:2.0.0"]\
+          ["@actions/io", "npm:3.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -797,7 +806,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:2.0.3"],\
+          ["@actions/core", "npm:3.0.0"],\
           ["@actions/github", "npm:9.0.0"],\
           ["@types/node", "npm:24.10.10"],\
           ["@vercel/ncc", "npm:0.38.4"],\
