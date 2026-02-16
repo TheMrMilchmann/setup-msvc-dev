@@ -22,10 +22,10 @@
  */
 import * as core from "@actions/core";
 import * as child from "child_process";
-import * as constants from "./constants";
+import * as constants from "./constants.js";
 import * as fs from "fs";
 import * as os from "os";
-import * as vswhere from "./vswhere";
+import * as vswhere from "./vswhere.js";
 
 async function run() {
     try {

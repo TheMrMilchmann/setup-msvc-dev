@@ -2,6 +2,7 @@
   "name": "setup-msvc-dev",
   "version": "4.1.0",
   "private": true,
+  "type": "module",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -20,7 +21,7 @@
   "author": "TheMrMilchmann",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^2.0.0",
+    "@actions/core": "^3.0.0",
     "@actions/github": "^9.0.0"
   },
   "devDependencies": {
