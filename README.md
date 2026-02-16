@@ -22,7 +22,7 @@ steps:
 ### Inputs
 
 - `arch` – target architecture (required if at least one is set: `sdk`,
-           `toolselt`, `uwp`, `spectre`)
+           `toolset`, `uwp`, `spectre`)
   - native compilation:
     - `x64`
     - `x86`
