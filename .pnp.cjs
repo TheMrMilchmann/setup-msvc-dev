@@ -70,7 +70,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/plugin-rest-endpoint-methods", "virtual:54eebb5091c5cdf804b6abc9a13dec1c823d931da7f0e8e7c0e93595c15d3b22ce18600ff382c6406f5935b38f1688b01b8180acfe79f8594fcc9313199e1286#npm:17.0.0"],\
           ["@octokit/request", "npm:10.0.8"],\
           ["@octokit/request-error", "npm:7.1.0"],\
-          ["undici", "npm:6.23.0"]\
+          ["undici", "npm:6.24.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -81,7 +81,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/http-client", "npm:3.0.2"],\
           ["tunnel", "npm:0.0.6"],\
-          ["undici", "npm:6.23.0"]\
+          ["undici", "npm:6.24.1"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -90,7 +90,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/http-client", "npm:4.0.0"],\
           ["tunnel", "npm:0.0.6"],\
-          ["undici", "npm:6.23.0"]\
+          ["undici", "npm:6.24.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -132,7 +132,7 @@ const RAW_RUNTIME_STATE =
           ["agent-base", "npm:7.1.4"],\
           ["http-proxy-agent", "npm:7.0.2"],\
           ["https-proxy-agent", "npm:7.0.6"],\
-          ["lru-cache", "npm:11.2.6"],\
+          ["lru-cache", "npm:11.2.7"],\
           ["socks-proxy-agent", "npm:8.0.5"]\
         ],\
         "linkType": "HARD"\
@@ -360,7 +360,7 @@ const RAW_RUNTIME_STATE =
           ["cacache", "npm:20.0.3"],\
           ["fs-minipass", "npm:3.0.3"],\
           ["glob", "npm:13.0.6"],\
-          ["lru-cache", "npm:11.2.6"],\
+          ["lru-cache", "npm:11.2.7"],\
           ["minipass", "npm:7.1.3"],\
           ["minipass-collect", "npm:2.0.1"],\
           ["minipass-flush", "npm:1.0.5"],\
@@ -562,10 +562,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lru-cache", [\
-      ["npm:11.2.6", {\
-        "packageLocation": "./.yarn/cache/lru-cache-npm-11.2.6-acb7d4323e-91222bbd59.zip/node_modules/lru-cache/",\
+      ["npm:11.2.7", {\
+        "packageLocation": "./.yarn/cache/lru-cache-npm-11.2.7-981c412138-fbff4b8dee.zip/node_modules/lru-cache/",\
         "packageDependencies": [\
-          ["lru-cache", "npm:11.2.6"]\
+          ["lru-cache", "npm:11.2.7"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -710,7 +710,7 @@ const RAW_RUNTIME_STATE =
           ["nopt", "npm:9.0.0"],\
           ["proc-log", "npm:6.1.0"],\
           ["semver", "npm:7.7.4"],\
-          ["tar", "npm:7.5.10"],\
+          ["tar", "npm:7.5.11"],\
           ["tinyglobby", "npm:0.2.15"],\
           ["which", "npm:6.0.1"]\
         ],\
@@ -740,7 +740,7 @@ const RAW_RUNTIME_STATE =
       ["npm:2.0.2", {\
         "packageLocation": "./.yarn/cache/path-scurry-npm-2.0.2-f10aa6a77e-2b4257422b.zip/node_modules/path-scurry/",\
         "packageDependencies": [\
-          ["lru-cache", "npm:11.2.6"],\
+          ["lru-cache", "npm:11.2.7"],\
           ["minipass", "npm:7.1.3"],\
           ["path-scurry", "npm:2.0.2"]\
         ],\
@@ -849,14 +849,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["tar", [\
-      ["npm:7.5.10", {\
-        "packageLocation": "./.yarn/cache/tar-npm-7.5.10-83147ff192-98ba6421a2.zip/node_modules/tar/",\
+      ["npm:7.5.11", {\
+        "packageLocation": "./.yarn/cache/tar-npm-7.5.11-c176cc1bb0-fb2e77ee85.zip/node_modules/tar/",\
         "packageDependencies": [\
           ["@isaacs/fs-minipass", "npm:4.0.1"],\
           ["chownr", "npm:3.0.0"],\
           ["minipass", "npm:7.1.3"],\
           ["minizlib", "npm:3.1.0"],\
-          ["tar", "npm:7.5.10"],\
+          ["tar", "npm:7.5.11"],\
           ["yallist", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -892,10 +892,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:6.23.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-6.23.0-7da0e26771-56950995e7.zip/node_modules/undici/",\
+      ["npm:6.24.1", {\
+        "packageLocation": "./.yarn/cache/undici-npm-6.24.1-78e2c403c6-4f84e60455.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:6.23.0"]\
+          ["undici", "npm:6.24.1"]\
         ],\
         "linkType": "HARD"\
       }]\
