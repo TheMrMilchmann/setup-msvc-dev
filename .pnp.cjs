@@ -105,11 +105,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@gar/promise-retry", [\
-      ["npm:1.0.2", {\
-        "packageLocation": "./.yarn/cache/@gar-promise-retry-npm-1.0.2-960b209ddf-b91326999c.zip/node_modules/@gar/promise-retry/",\
+      ["npm:1.0.3", {\
+        "packageLocation": "./.yarn/cache/@gar-promise-retry-npm-1.0.3-f96d9024c8-0d13ea3bb1.zip/node_modules/@gar/promise-retry/",\
         "packageDependencies": [\
-          ["@gar/promise-retry", "npm:1.0.2"],\
-          ["retry", "npm:0.13.1"]\
+          ["@gar/promise-retry", "npm:1.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -144,6 +143,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@npmcli/fs", "npm:5.0.0"],\
           ["semver", "npm:7.7.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@npmcli/redact", [\
+      ["npm:4.0.0", {\
+        "packageLocation": "./.yarn/cache/@npmcli-redact-npm-4.0.0-b3e2eeb8d8-5d52df2b52.zip/node_modules/@npmcli/redact/",\
+        "packageDependencies": [\
+          ["@npmcli/redact", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -260,7 +268,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/request-error", "npm:7.1.0"],\
           ["@octokit/types", "npm:16.0.0"],\
           ["fast-content-type-parse", "npm:3.0.0"],\
-          ["json-with-bigint", "npm:3.5.7"],\
+          ["json-with-bigint", "npm:3.5.8"],\
           ["universal-user-agent", "npm:7.0.3"]\
         ],\
         "linkType": "HARD"\
@@ -353,11 +361,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["cacache", [\
-      ["npm:20.0.3", {\
-        "packageLocation": "./.yarn/cache/cacache-npm-20.0.3-5f244d5bdd-388a016997.zip/node_modules/cacache/",\
+      ["npm:20.0.4", {\
+        "packageLocation": "./.yarn/cache/cacache-npm-20.0.4-8b821558c9-02c1b4c57d.zip/node_modules/cacache/",\
         "packageDependencies": [\
           ["@npmcli/fs", "npm:5.0.0"],\
-          ["cacache", "npm:20.0.3"],\
+          ["cacache", "npm:20.0.4"],\
           ["fs-minipass", "npm:3.0.3"],\
           ["glob", "npm:13.0.6"],\
           ["lru-cache", "npm:11.2.7"],\
@@ -366,8 +374,7 @@ const RAW_RUNTIME_STATE =
           ["minipass-flush", "npm:1.0.5"],\
           ["minipass-pipeline", "npm:1.2.4"],\
           ["p-map", "npm:7.0.4"],\
-          ["ssri", "npm:13.0.1"],\
-          ["unique-filename", "npm:5.0.0"]\
+          ["ssri", "npm:13.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -525,15 +532,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["imurmurhash", [\
-      ["npm:0.1.4", {\
-        "packageLocation": "./.yarn/cache/imurmurhash-npm-0.1.4-610c5068a0-2d30b157a9.zip/node_modules/imurmurhash/",\
-        "packageDependencies": [\
-          ["imurmurhash", "npm:0.1.4"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["ip-address", [\
       ["npm:10.1.0", {\
         "packageLocation": "./.yarn/cache/ip-address-npm-10.1.0-d5d5693401-a6979629d1.zip/node_modules/ip-address/",\
@@ -553,10 +551,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["json-with-bigint", [\
-      ["npm:3.5.7", {\
-        "packageLocation": "./.yarn/cache/json-with-bigint-npm-3.5.7-69b7ed2835-7f8c9e81e0.zip/node_modules/json-with-bigint/",\
+      ["npm:3.5.8", {\
+        "packageLocation": "./.yarn/cache/json-with-bigint-npm-3.5.8-a5c068a5a0-84c4b34a25.zip/node_modules/json-with-bigint/",\
         "packageDependencies": [\
-          ["json-with-bigint", "npm:3.5.7"]\
+          ["json-with-bigint", "npm:3.5.8"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -571,14 +569,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["make-fetch-happen", [\
-      ["npm:15.0.4", {\
-        "packageLocation": "./.yarn/cache/make-fetch-happen-npm-15.0.4-cd90f16f9b-4aa75baab5.zip/node_modules/make-fetch-happen/",\
+      ["npm:15.0.5", {\
+        "packageLocation": "./.yarn/cache/make-fetch-happen-npm-15.0.5-2787a25aa9-d2649effb0.zip/node_modules/make-fetch-happen/",\
         "packageDependencies": [\
-          ["@gar/promise-retry", "npm:1.0.2"],\
+          ["@gar/promise-retry", "npm:1.0.3"],\
           ["@npmcli/agent", "npm:4.0.0"],\
-          ["cacache", "npm:20.0.3"],\
+          ["@npmcli/redact", "npm:4.0.0"],\
+          ["cacache", "npm:20.0.4"],\
           ["http-cache-semantics", "npm:4.2.0"],\
-          ["make-fetch-happen", "npm:15.0.4"],\
+          ["make-fetch-happen", "npm:15.0.5"],\
           ["minipass", "npm:7.1.3"],\
           ["minipass-fetch", "npm:5.0.2"],\
           ["minipass-flush", "npm:1.0.5"],\
@@ -705,12 +704,12 @@ const RAW_RUNTIME_STATE =
           ["env-paths", "npm:2.2.1"],\
           ["exponential-backoff", "npm:3.1.3"],\
           ["graceful-fs", "npm:4.2.11"],\
-          ["make-fetch-happen", "npm:15.0.4"],\
+          ["make-fetch-happen", "npm:15.0.5"],\
           ["node-gyp", "npm:12.2.0"],\
           ["nopt", "npm:9.0.0"],\
           ["proc-log", "npm:6.1.0"],\
           ["semver", "npm:7.7.4"],\
-          ["tar", "npm:7.5.11"],\
+          ["tar", "npm:7.5.12"],\
           ["tinyglobby", "npm:0.2.15"],\
           ["which", "npm:6.0.1"]\
         ],\
@@ -761,15 +760,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/proc-log-npm-6.1.0-84e609b3f4-9033f30f16.zip/node_modules/proc-log/",\
         "packageDependencies": [\
           ["proc-log", "npm:6.1.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["retry", [\
-      ["npm:0.13.1", {\
-        "packageLocation": "./.yarn/cache/retry-npm-0.13.1-89eb100ab6-6125ec2e06.zip/node_modules/retry/",\
-        "packageDependencies": [\
-          ["retry", "npm:0.13.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -849,14 +839,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["tar", [\
-      ["npm:7.5.11", {\
-        "packageLocation": "./.yarn/cache/tar-npm-7.5.11-c176cc1bb0-fb2e77ee85.zip/node_modules/tar/",\
+      ["npm:7.5.12", {\
+        "packageLocation": "./.yarn/cache/tar-npm-7.5.12-f5cb8bec72-a72114d28a.zip/node_modules/tar/",\
         "packageDependencies": [\
           ["@isaacs/fs-minipass", "npm:4.0.1"],\
           ["chownr", "npm:3.0.0"],\
           ["minipass", "npm:7.1.3"],\
           ["minizlib", "npm:3.1.0"],\
-          ["tar", "npm:7.5.11"],\
+          ["tar", "npm:7.5.12"],\
           ["yallist", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -905,26 +895,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/undici-types-npm-7.16.0-0e23b08124-db43439f69.zip/node_modules/undici-types/",\
         "packageDependencies": [\
           ["undici-types", "npm:7.16.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["unique-filename", [\
-      ["npm:5.0.0", {\
-        "packageLocation": "./.yarn/cache/unique-filename-npm-5.0.0-605f54f18e-a5f67085ca.zip/node_modules/unique-filename/",\
-        "packageDependencies": [\
-          ["unique-filename", "npm:5.0.0"],\
-          ["unique-slug", "npm:6.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["unique-slug", [\
-      ["npm:6.0.0", {\
-        "packageLocation": "./.yarn/cache/unique-slug-npm-6.0.0-f26b186e99-b78ed9d5b0.zip/node_modules/unique-slug/",\
-        "packageDependencies": [\
-          ["imurmurhash", "npm:0.1.4"],\
-          ["unique-slug", "npm:6.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1172,16 +1142,16 @@ function convertToBigIntStats(stats) {
     if (Object.hasOwn(stats, key)) {
       const element = stats[key];
       if (typeof element === `number`) {
-        bigintStats[key] = BigInt(element);
+        bigintStats[key] = BigInt(Math.floor(element));
       } else if (nodeUtils__namespace.types.isDate(element)) {
         bigintStats[key] = new Date(element);
       }
     }
   }
-  bigintStats.atimeNs = bigintStats.atimeMs * BigInt(1e6);
-  bigintStats.mtimeNs = bigintStats.mtimeMs * BigInt(1e6);
-  bigintStats.ctimeNs = bigintStats.ctimeMs * BigInt(1e6);
-  bigintStats.birthtimeNs = bigintStats.birthtimeMs * BigInt(1e6);
+  bigintStats.atimeNs = bigintStats.atimeMs * BigInt(1e6) + BigInt(Math.floor(stats.atimeMs % 1 * 1e3)) * BigInt(1e3);
+  bigintStats.mtimeNs = bigintStats.mtimeMs * BigInt(1e6) + BigInt(Math.floor(stats.mtimeMs % 1 * 1e3)) * BigInt(1e3);
+  bigintStats.ctimeNs = bigintStats.ctimeMs * BigInt(1e6) + BigInt(Math.floor(stats.ctimeMs % 1 * 1e3)) * BigInt(1e3);
+  bigintStats.birthtimeNs = bigintStats.birthtimeMs * BigInt(1e6) + BigInt(Math.floor(stats.birthtimeMs % 1 * 1e3)) * BigInt(1e3);
   return bigintStats;
 }
 function areStatsEqual(a, b) {
