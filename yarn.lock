@@ -264,11 +264,11 @@ __metadata:
   linkType: hard
 
 "brace-expansion@npm:^5.0.2":
-  version: 5.0.4
-  resolution: "brace-expansion@npm:5.0.4"
+  version: 5.0.5
+  resolution: "brace-expansion@npm:5.0.5"
   dependencies:
     balanced-match: "npm:^4.0.2"
-  checksum: 10/cfd57e20d8ded9578149e47ae4d3fff2b2f78d06b54a32a73057bddff65c8e9b930613f0cbcfefedf12dd117151e19d4da16367d5127c54f3bff02d8a4479bb2
+  checksum: 10/f259b2ddf04489da9512ad637ba6b4ef2d77abd4445d20f7f1714585f153435200a53fa6a2e4a5ee974df14ddad4cd16421f6f803e96e8b452bd48598878d0ee
   languageName: node
   linkType: hard
 
@@ -487,11 +487,11 @@ __metadata:
   linkType: hard
 
 "minipass-flush@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "minipass-flush@npm:1.0.5"
+  version: 1.0.7
+  resolution: "minipass-flush@npm:1.0.7"
   dependencies:
     minipass: "npm:^3.0.0"
-  checksum: 10/56269a0b22bad756a08a94b1ffc36b7c9c5de0735a4dd1ab2b06c066d795cfd1f0ac44a0fcae13eece5589b908ecddc867f04c745c7009be0b566421ea0944cf
+  checksum: 10/dc43fd1644aaea31b6ba88281d928a136b9fcd5425c718791e1007db15cf2cd41c75d073548d2f46088f90971833b3bd86752d2a2612bf8256122dedf5b7f3db
   languageName: node
   linkType: hard
 
@@ -601,9 +601,9 @@ __metadata:
   linkType: hard
 
 "picomatch@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "picomatch@npm:4.0.3"
-  checksum: 10/57b99055f40b16798f2802916d9c17e9744e620a0db136554af01d19598b96e45e2f00014c91d1b8b13874b80caa8c295b3d589a3f72373ec4aaf54baa5962d5
+  version: 4.0.4
+  resolution: "picomatch@npm:4.0.4"
+  checksum: 10/f6ef80a3590827ce20378ae110ac78209cc4f74d39236370f1780f957b7ee41c12acde0e4651b90f39983506fd2f5e449994716f516db2e9752924aff8de93ce
   languageName: node
   linkType: hard
 
@@ -680,15 +680,15 @@ __metadata:
   linkType: hard
 
 "tar@npm:^7.5.4":
-  version: 7.5.12
-  resolution: "tar@npm:7.5.12"
+  version: 7.5.13
+  resolution: "tar@npm:7.5.13"
   dependencies:
     "@isaacs/fs-minipass": "npm:^4.0.0"
     chownr: "npm:^3.0.0"
     minipass: "npm:^7.1.2"
     minizlib: "npm:^3.1.0"
     yallist: "npm:^5.0.0"
-  checksum: 10/a72114d28ab9b4878eeebaae8987692a577c390683c13f150d8330e139237038cc46fbb0be6983b02acf5a31b01d74776436ba03790f320a59efb44b8ac39e39
+  checksum: 10/2bc2b6f0349038a6621dbba1c4522d45752d5071b2994692257113c2050cd23fafc30308f820e5f8ad6fda3f7d7f92adc9a432aa733daa04c42af2061c021c3f
   languageName: node
   linkType: hard
 
