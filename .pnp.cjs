@@ -70,7 +70,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/plugin-rest-endpoint-methods", "virtual:7d2977f4bfb46f14a88acc2c9425f5ddd6503486601ff3978eafafeeb45f973f8fc8b4da37811ad51a25ba46c84506195cbc093dfa155d4dda3470a5dad5c0af#npm:17.0.0"],\
           ["@octokit/request", "npm:10.0.8"],\
           ["@octokit/request-error", "npm:7.1.0"],\
-          ["undici", "npm:6.24.1"]\
+          ["undici", "npm:6.25.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -81,7 +81,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/http-client", "npm:3.0.2"],\
           ["tunnel", "npm:0.0.6"],\
-          ["undici", "npm:6.24.1"]\
+          ["undici", "npm:6.25.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -90,7 +90,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/http-client", "npm:4.0.0"],\
           ["tunnel", "npm:0.0.6"],\
-          ["undici", "npm:6.24.1"]\
+          ["undici", "npm:6.25.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -131,7 +131,7 @@ const RAW_RUNTIME_STATE =
           ["agent-base", "npm:7.1.4"],\
           ["http-proxy-agent", "npm:7.0.2"],\
           ["https-proxy-agent", "npm:7.0.6"],\
-          ["lru-cache", "npm:11.3.3"],\
+          ["lru-cache", "npm:11.3.5"],\
           ["socks-proxy-agent", "npm:8.0.5"]\
         ],\
         "linkType": "HARD"\
@@ -368,7 +368,7 @@ const RAW_RUNTIME_STATE =
           ["cacache", "npm:20.0.4"],\
           ["fs-minipass", "npm:3.0.3"],\
           ["glob", "npm:13.0.6"],\
-          ["lru-cache", "npm:11.3.3"],\
+          ["lru-cache", "npm:11.3.5"],\
           ["minipass", "npm:7.1.3"],\
           ["minipass-collect", "npm:2.0.1"],\
           ["minipass-flush", "npm:1.0.7"],\
@@ -560,10 +560,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lru-cache", [\
-      ["npm:11.3.3", {\
-        "packageLocation": "./.yarn/cache/lru-cache-npm-11.3.3-50b1c940e1-d45c199223.zip/node_modules/lru-cache/",\
+      ["npm:11.3.5", {\
+        "packageLocation": "./.yarn/cache/lru-cache-npm-11.3.5-461fa6ecab-3701b77e87.zip/node_modules/lru-cache/",\
         "packageDependencies": [\
-          ["lru-cache", "npm:11.3.3"]\
+          ["lru-cache", "npm:11.3.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -739,7 +739,7 @@ const RAW_RUNTIME_STATE =
       ["npm:2.0.2", {\
         "packageLocation": "./.yarn/cache/path-scurry-npm-2.0.2-f10aa6a77e-2b4257422b.zip/node_modules/path-scurry/",\
         "packageDependencies": [\
-          ["lru-cache", "npm:11.3.3"],\
+          ["lru-cache", "npm:11.3.5"],\
           ["minipass", "npm:7.1.3"],\
           ["path-scurry", "npm:2.0.2"]\
         ],\
@@ -882,10 +882,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:6.24.1", {\
-        "packageLocation": "./.yarn/cache/undici-npm-6.24.1-78e2c403c6-4f84e60455.zip/node_modules/undici/",\
+      ["npm:6.25.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-6.25.0-6002e70879-a475e45da3.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:6.24.1"]\
+          ["undici", "npm:6.25.0"]\
         ],\
         "linkType": "HARD"\
       }]\
