@@ -28,7 +28,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:3.0.0"],\
+          ["@actions/core", "npm:3.0.1"],\
           ["@actions/github", "npm:9.1.0"],\
           ["@types/node", "npm:24.12.2"],\
           ["@vercel/ncc", "npm:0.38.4"],\
@@ -39,10 +39,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@actions/core", [\
-      ["npm:3.0.0", {\
-        "packageLocation": "./.yarn/cache/@actions-core-npm-3.0.0-fbea614863-fddeebfaf6.zip/node_modules/@actions/core/",\
+      ["npm:3.0.1", {\
+        "packageLocation": "./.yarn/cache/@actions-core-npm-3.0.1-aac60a1c20-e1295f6b81.zip/node_modules/@actions/core/",\
         "packageDependencies": [\
-          ["@actions/core", "npm:3.0.0"],\
+          ["@actions/core", "npm:3.0.1"],\
           ["@actions/exec", "npm:3.0.0"],\
           ["@actions/http-client", "npm:4.0.0"]\
         ],\
@@ -786,7 +786,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@actions/core", "npm:3.0.0"],\
+          ["@actions/core", "npm:3.0.1"],\
           ["@actions/github", "npm:9.1.0"],\
           ["@types/node", "npm:24.12.2"],\
           ["@vercel/ncc", "npm:0.38.4"],\
