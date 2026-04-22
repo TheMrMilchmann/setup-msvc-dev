@@ -22,10 +22,11 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Module Resolution Options */
-    "allowSyntheticDefaultImports": false,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+
+    "types": ["node"]
   },
   "exclude": [
     "dist",

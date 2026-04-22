@@ -82,7 +82,7 @@ async function run() {
                 return;
             }
 
-            const commandOutputParts = commandOutput.split("\f");
+            const commandOutputParts = (commandOutput as string).split("\f");
             const oldEnvOutput = commandOutputParts[0].split("\r\n");
             const vcvarsallOutput = commandOutputParts[1].split("\r\n");
             const newEnvOutput = commandOutputParts[2].split("\r\n");
