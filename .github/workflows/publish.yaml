@@ -24,6 +24,9 @@ jobs:
           node-version-file: "package.json"
           cache: "yarn"
 
+      - name: Yarn install
+        run: yarn install --immutable
+
       - name: Yarn build
         run: yarn build
 
