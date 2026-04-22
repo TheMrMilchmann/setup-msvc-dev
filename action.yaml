@@ -28,7 +28,7 @@ inputs:
     required: false
 runs:
   using: 'node24'
-  main: 'dist/index.js'
+  main: 'dist/index.cjs'
 branding:
   icon: terminal
   color: gray-dark
