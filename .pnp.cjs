@@ -44,7 +44,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/core", "npm:3.0.1"],\
           ["@actions/exec", "npm:3.0.0"],\
-          ["@actions/http-client", "npm:4.0.0"]\
+          ["@actions/http-client", "npm:4.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -85,10 +85,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.0.0", {\
-        "packageLocation": "./.yarn/cache/@actions-http-client-npm-4.0.0-7a74e845d8-05f6061745.zip/node_modules/@actions/http-client/",\
+      ["npm:4.0.1", {\
+        "packageLocation": "./.yarn/cache/@actions-http-client-npm-4.0.1-40971b2006-4fab65bf48.zip/node_modules/@actions/http-client/",\
         "packageDependencies": [\
-          ["@actions/http-client", "npm:4.0.0"],\
+          ["@actions/http-client", "npm:4.0.1"],\
           ["tunnel", "npm:0.0.6"],\
           ["undici", "npm:6.25.0"]\
         ],\
