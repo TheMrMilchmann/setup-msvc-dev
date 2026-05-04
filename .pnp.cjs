@@ -1113,7 +1113,7 @@ const RAW_RUNTIME_STATE =
           ["mlly", "npm:1.8.2"],\
           ["pathe", "npm:2.0.3"],\
           ["pkg-types", "npm:1.3.1"],\
-          ["ufo", "npm:1.6.3"]\
+          ["ufo", "npm:1.6.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1513,10 +1513,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ufo", [\
-      ["npm:1.6.3", {\
-        "packageLocation": "./.yarn/cache/ufo-npm-1.6.3-29bac69d97-79803984f3.zip/node_modules/ufo/",\
+      ["npm:1.6.4", {\
+        "packageLocation": "./.yarn/cache/ufo-npm-1.6.4-553560ac30-dbf85425e0.zip/node_modules/ufo/",\
         "packageDependencies": [\
-          ["ufo", "npm:1.6.3"]\
+          ["ufo", "npm:1.6.4"]\
         ],\
         "linkType": "HARD"\
       }]\
