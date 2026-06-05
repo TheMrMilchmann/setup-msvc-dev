@@ -30,7 +30,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/core", "npm:3.0.1"],\
           ["@actions/github", "npm:9.1.1"],\
-          ["@types/node", "npm:24.12.4"],\
+          ["@types/node", "npm:24.13.0"],\
           ["setup-msvc-dev", "workspace:."],\
           ["tsdown", "virtual:5e6058da3c2cad6af59c835f134eeb62e81863a15a638583c4895713ac22d05af5e4e985178ed99180b62d70417fb3694b68c469dfacdb846ffe39b2ea37921a#npm:0.22.1"],\
           ["typescript", "patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"]\
@@ -589,11 +589,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:24.12.4", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-24.12.4-fb0c00261b-4e5ce6faaf.zip/node_modules/@types/node/",\
+      ["npm:24.13.0", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-24.13.0-87e4827cd6-13e69ffde5.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:24.12.4"],\
-          ["undici-types", "npm:7.16.0"]\
+          ["@types/node", "npm:24.13.0"],\
+          ["undici-types", "npm:7.18.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -905,7 +905,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/core", "npm:3.0.1"],\
           ["@actions/github", "npm:9.1.1"],\
-          ["@types/node", "npm:24.12.4"],\
+          ["@types/node", "npm:24.13.0"],\
           ["setup-msvc-dev", "workspace:."],\
           ["tsdown", "virtual:5e6058da3c2cad6af59c835f134eeb62e81863a15a638583c4895713ac22d05af5e4e985178ed99180b62d70417fb3694b68c469dfacdb846ffe39b2ea37921a#npm:0.22.1"],\
           ["typescript", "patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"]\
@@ -1059,10 +1059,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici-types", [\
-      ["npm:7.16.0", {\
-        "packageLocation": "./.yarn/cache/undici-types-npm-7.16.0-0e23b08124-db43439f69.zip/node_modules/undici-types/",\
+      ["npm:7.18.2", {\
+        "packageLocation": "./.yarn/cache/undici-types-npm-7.18.2-3e6d69d829-e61a5918f6.zip/node_modules/undici-types/",\
         "packageDependencies": [\
-          ["undici-types", "npm:7.16.0"]\
+          ["undici-types", "npm:7.18.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6781,7 +6781,7 @@ function getPathForDisplay(p) {
   return npath.normalize(npath.fromPortablePath(p));
 }
 
-const [major, minor] = process.versions.node.split(`.`).map((value) => parseInt(value, 10));
+const [major, minor, patch] = process.versions.node.split(`.`).map((value) => parseInt(value, 10));
 const WATCH_MODE_MESSAGE_USES_ARRAYS = major > 19 || major === 19 && minor >= 2 || major === 18 && minor >= 13;
 
 function readPackageScope(checkPath) {
