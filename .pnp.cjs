@@ -774,10 +774,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["obug", [\
-      ["npm:2.1.1", {\
-        "packageLocation": "./.yarn/cache/obug-npm-2.1.1-029730d296-bdcf921336.zip/node_modules/obug/",\
+      ["npm:2.1.2", {\
+        "packageLocation": "./.yarn/cache/obug-npm-2.1.2-61eecb6456-2f9f66af8c.zip/node_modules/obug/",\
         "packageDependencies": [\
-          ["obug", "npm:2.1.1"]\
+          ["obug", "npm:2.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -869,7 +869,7 @@ const RAW_RUNTIME_STATE =
           ["birpc", "npm:4.0.0"],\
           ["dts-resolver", "virtual:dbe143206d6794d180efa322fe4e0efb0281472700bfbb9f71fc89538851ee3d65c54745db0db7c0962657e04abcb5e662a6e86a0e51cb2db3650d32be15aac0#npm:3.0.0"],\
           ["get-tsconfig", "npm:5.0.0-beta.5"],\
-          ["obug", "npm:2.1.1"],\
+          ["obug", "npm:2.1.2"],\
           ["rolldown", "npm:1.1.0"],\
           ["rolldown-plugin-dts", "virtual:fef88c407f556b974e52974d1d9b06a9d5d47b31a162000d8b636c0c4cc6c82d349c443ee11b25187eb9a3c70d16df8d7238eec110be91d5f1e668c643a1d940#npm:0.25.2"],\
           ["typescript", "patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"],\
@@ -891,10 +891,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["semver", [\
-      ["npm:7.8.1", {\
-        "packageLocation": "./.yarn/cache/semver-npm-7.8.1-9448873cc9-3244f6c4cb.zip/node_modules/semver/",\
+      ["npm:7.8.2", {\
+        "packageLocation": "./.yarn/cache/semver-npm-7.8.2-d4832567a9-52221d8f1c.zip/node_modules/semver/",\
         "packageDependencies": [\
-          ["semver", "npm:7.8.1"]\
+          ["semver", "npm:7.8.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -972,12 +972,12 @@ const RAW_RUNTIME_STATE =
           ["empathic", "npm:2.0.1"],\
           ["hookable", "npm:6.1.1"],\
           ["import-without-cache", "npm:0.4.0"],\
-          ["obug", "npm:2.1.1"],\
+          ["obug", "npm:2.1.2"],\
           ["picomatch", "npm:4.0.4"],\
           ["publint", null],\
           ["rolldown", "npm:1.1.0"],\
           ["rolldown-plugin-dts", "virtual:fef88c407f556b974e52974d1d9b06a9d5d47b31a162000d8b636c0c4cc6c82d349c443ee11b25187eb9a3c70d16df8d7238eec110be91d5f1e668c643a1d940#npm:0.25.2"],\
-          ["semver", "npm:7.8.1"],\
+          ["semver", "npm:7.8.2"],\
           ["tinyexec", "npm:1.2.4"],\
           ["tinyglobby", "npm:0.2.17"],\
           ["tree-kill", "npm:1.2.2"],\
