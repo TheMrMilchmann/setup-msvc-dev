@@ -30,7 +30,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/core", "npm:3.0.1"],\
           ["@actions/github", "npm:9.1.1"],\
-          ["@types/node", "npm:24.13.1"],\
+          ["@types/node", "npm:24.13.2"],\
           ["setup-msvc-dev", "workspace:."],\
           ["tsdown", "virtual:5e6058da3c2cad6af59c835f134eeb62e81863a15a638583c4895713ac22d05af5e4e985178ed99180b62d70417fb3694b68c469dfacdb846ffe39b2ea37921a#npm:0.22.2"],\
           ["typescript", "patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"]\
@@ -589,10 +589,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:24.13.1", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-24.13.1-376494e757-44aef6ada0.zip/node_modules/@types/node/",\
+      ["npm:24.13.2", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-24.13.2-785822bd87-2b8cb95ada.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:24.13.1"],\
+          ["@types/node", "npm:24.13.2"],\
           ["undici-types", "npm:7.18.2"]\
         ],\
         "linkType": "HARD"\
@@ -905,7 +905,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/core", "npm:3.0.1"],\
           ["@actions/github", "npm:9.1.1"],\
-          ["@types/node", "npm:24.13.1"],\
+          ["@types/node", "npm:24.13.2"],\
           ["setup-msvc-dev", "workspace:."],\
           ["tsdown", "virtual:5e6058da3c2cad6af59c835f134eeb62e81863a15a638583c4895713ac22d05af5e4e985178ed99180b62d70417fb3694b68c469dfacdb846ffe39b2ea37921a#npm:0.22.2"],\
           ["typescript", "patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"]\
