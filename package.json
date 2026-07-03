@@ -6,7 +6,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc --noEmit && tsdown"
+    "build": "tsc --noEmit && ncc build -o dist src/setup-msvc-dev.ts"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
-    "tsdown": "^0.22.0",
+    "@vercel/ncc": "^0.44.1",
     "typescript": "^6.0.0"
   },
   "engines": {
