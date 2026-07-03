@@ -68,9 +68,9 @@ const RAW_RUNTIME_STATE =
           ["@octokit/core", "npm:7.0.6"],\
           ["@octokit/plugin-paginate-rest", "virtual:ef461bf9dfab992a4a8b83f9ce47645137d062a7625083f049f0c085c76a8b070d30fe1eff90fd4d4f8d4d341f24a103d1790978c3b570c60c21fbc333180f3f#npm:14.0.0"],\
           ["@octokit/plugin-rest-endpoint-methods", "virtual:ef461bf9dfab992a4a8b83f9ce47645137d062a7625083f049f0c085c76a8b070d30fe1eff90fd4d4f8d4d341f24a103d1790978c3b570c60c21fbc333180f3f#npm:17.0.0"],\
-          ["@octokit/request", "npm:10.0.10"],\
+          ["@octokit/request", "npm:10.0.11"],\
           ["@octokit/request-error", "npm:7.1.0"],\
-          ["undici", "npm:6.26.0"]\
+          ["undici", "npm:6.27.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -81,7 +81,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/http-client", "npm:3.0.2"],\
           ["tunnel", "npm:0.0.6"],\
-          ["undici", "npm:6.26.0"]\
+          ["undici", "npm:6.27.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -90,7 +90,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/http-client", "npm:4.0.1"],\
           ["tunnel", "npm:0.0.6"],\
-          ["undici", "npm:6.26.0"]\
+          ["undici", "npm:6.27.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -130,7 +130,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/auth-token", "npm:6.0.0"],\
           ["@octokit/core", "npm:7.0.6"],\
           ["@octokit/graphql", "npm:9.0.3"],\
-          ["@octokit/request", "npm:10.0.10"],\
+          ["@octokit/request", "npm:10.0.11"],\
           ["@octokit/request-error", "npm:7.1.0"],\
           ["@octokit/types", "npm:16.0.0"],\
           ["before-after-hook", "npm:4.0.0"],\
@@ -155,7 +155,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@octokit-graphql-npm-9.0.3-bef8b8b22c-7b16f281f8.zip/node_modules/@octokit/graphql/",\
         "packageDependencies": [\
           ["@octokit/graphql", "npm:9.0.3"],\
-          ["@octokit/request", "npm:10.0.10"],\
+          ["@octokit/request", "npm:10.0.11"],\
           ["@octokit/types", "npm:16.0.0"],\
           ["universal-user-agent", "npm:7.0.3"]\
         ],\
@@ -218,11 +218,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@octokit/request", [\
-      ["npm:10.0.10", {\
-        "packageLocation": "./.yarn/cache/@octokit-request-npm-10.0.10-ec847214e9-e3f8410a1d.zip/node_modules/@octokit/request/",\
+      ["npm:10.0.11", {\
+        "packageLocation": "./.yarn/cache/@octokit-request-npm-10.0.11-600f1ba312-036640f49e.zip/node_modules/@octokit/request/",\
         "packageDependencies": [\
           ["@octokit/endpoint", "npm:11.0.3"],\
-          ["@octokit/request", "npm:10.0.10"],\
+          ["@octokit/request", "npm:10.0.11"],\
           ["@octokit/request-error", "npm:7.1.0"],\
           ["@octokit/types", "npm:16.0.0"],\
           ["content-type", "npm:2.0.0"],\
@@ -508,13 +508,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:6.26.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-6.26.0-aa9f162436-a1715ee430.zip/node_modules/undici/",\
-        "packageDependencies": [\
-          ["undici", "npm:6.26.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:6.27.0", {\
         "packageLocation": "./.yarn/cache/undici-npm-6.27.0-00a86409ac-30c18cdb23.zip/node_modules/undici/",\
         "packageDependencies": [\
