@@ -267,7 +267,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@vercel-ncc-npm-0.44.1-60e1c067fa-c362588870.zip/node_modules/@vercel/ncc/",\
         "packageDependencies": [\
           ["@vercel/ncc", "npm:0.44.1"],\
-          ["node-gyp", "npm:13.0.0"]\
+          ["node-gyp", "npm:13.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -339,7 +339,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/picomatch", null],\
           ["fdir", "virtual:f2c3ddb9177a69fd371e15c77b73bfaf3f96b278d9e45c2d22b493c8bc3e58f571555e32a44df0c8c1a132e08889c6c9fdf9f21791163f07c9a5aef76fddb09f#npm:6.5.0"],\
-          ["picomatch", "npm:4.0.4"]\
+          ["picomatch", "npm:4.0.5"]\
         ],\
         "packagePeers": [\
           "@types/picomatch",\
@@ -395,19 +395,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["node-gyp", [\
-      ["npm:13.0.0", {\
-        "packageLocation": "./.yarn/unplugged/node-gyp-npm-13.0.0-f910600f25/node_modules/node-gyp/",\
+      ["npm:13.0.1", {\
+        "packageLocation": "./.yarn/unplugged/node-gyp-npm-13.0.1-b64b93933d/node_modules/node-gyp/",\
         "packageDependencies": [\
           ["env-paths", "npm:2.2.1"],\
           ["exponential-backoff", "npm:3.1.3"],\
           ["graceful-fs", "npm:4.2.11"],\
-          ["node-gyp", "npm:13.0.0"],\
+          ["node-gyp", "npm:13.0.1"],\
           ["nopt", "npm:10.0.1"],\
           ["proc-log", "npm:7.0.0"],\
           ["semver", "npm:7.8.5"],\
           ["tar", "npm:7.5.19"],\
           ["tinyglobby", "npm:0.2.17"],\
-          ["undici", "npm:6.27.0"],\
+          ["undici", "npm:8.7.0"],\
           ["which", "npm:7.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -424,10 +424,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["picomatch", [\
-      ["npm:4.0.4", {\
-        "packageLocation": "./.yarn/cache/picomatch-npm-4.0.4-e82d450244-f6ef80a359.zip/node_modules/picomatch/",\
+      ["npm:4.0.5", {\
+        "packageLocation": "./.yarn/cache/picomatch-npm-4.0.5-bb8e0de0f7-8bad770af9.zip/node_modules/picomatch/",\
         "packageDependencies": [\
-          ["picomatch", "npm:4.0.4"]\
+          ["picomatch", "npm:4.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -483,7 +483,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/tinyglobby-npm-0.2.17-f2c3ddb917-f85e8a217d.zip/node_modules/tinyglobby/",\
         "packageDependencies": [\
           ["fdir", "virtual:f2c3ddb9177a69fd371e15c77b73bfaf3f96b278d9e45c2d22b493c8bc3e58f571555e32a44df0c8c1a132e08889c6c9fdf9f21791163f07c9a5aef76fddb09f#npm:6.5.0"],\
-          ["picomatch", "npm:4.0.4"],\
+          ["picomatch", "npm:4.0.5"],\
           ["tinyglobby", "npm:0.2.17"]\
         ],\
         "linkType": "HARD"\
@@ -512,6 +512,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/undici-npm-6.27.0-00a86409ac-30c18cdb23.zip/node_modules/undici/",\
         "packageDependencies": [\
           ["undici", "npm:6.27.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:8.7.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-8.7.0-5924f7a7c1-e9644903bd.zip/node_modules/undici/",\
+        "packageDependencies": [\
+          ["undici", "npm:8.7.0"]\
         ],\
         "linkType": "HARD"\
       }]\
