@@ -113,12 +113,12 @@ async function run() {
 
                     const pathLikeVariables = ["PATH", "INCLUDE", "LIB", "LIBPATH"];
                     if (pathLikeVariables.indexOf(name.toUpperCase()) !== 1) {
-                        function unqiue(value: string, index: number, self: string[]) {
+                        function unique(value: string, index: number, self: string[]) {
                             return self.indexOf(value) === index;
                         }
 
                         newValue = newValue.split(';')
-                            .filter(unqiue)
+                            .filter(unique)
                             .join(";");
                     }
 
