@@ -1,9 +1,8 @@
-### 4.0.0
+### 4.1.0
 
-_Released 2025 Sep 01_
+_Released 2026 Jul 23_
 
 #### Improvements
 
-- Updated to the node24 runtime by default.
-    - This requires a minimum [Actions Runner](https://github.com/actions/runner/releases/tag/v2.327.1)
-      version of v2.327.1 to run.
+- Improved `vswhere` discovery to take into account well-known installation
+  paths before falling back to invocation via `%PATH%`.
