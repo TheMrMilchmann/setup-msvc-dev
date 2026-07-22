@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2019 ilammy
- * Copyright (c) 2021-2024 Leon Linhart
+ * Copyright (c) 2021-2026 Leon Linhart
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,14 +20,30 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+import * as core from "@actions/core";
 import * as child from "child_process";
+import * as fs from "fs";
 
 export function findVS(): string {
+    let vswhere = findVSWhere();
+
     try {
-        return child.execSync("vswhere -products * -latest -prerelease -property installationPath")
+        return child.execSync(`"${vswhere}" -products * -latest -prerelease -property installationPath`)
             .toString()
             .trim();
     } catch (e) {
         throw new Error("vswhere did not find Visual Studio", { cause: e });
     }
+}
+
+function findVSWhere(): string {
+    const programFilesX86 = process.env["ProgramFiles(x86)"];
+    const vswherePath = `${programFilesX86}\\Microsoft Visual Studio\\Installer\\vswhere.exe`;
+    if (fs.existsSync(vswherePath)) {
+        core.info(`Found vswhere at '${vswherePath}'`);
+        return vswherePath;
+    }
+
+    core.info("Assuming vswhere is available in %PATH%");
+    return "vswhere";
 }

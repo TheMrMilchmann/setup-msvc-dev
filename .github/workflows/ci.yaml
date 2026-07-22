@@ -21,20 +21,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version-file: "package.json"
           cache: "yarn"
+
+      - name: Yarn install
+        run: yarn install --immutable
 
       - name: Yarn build
         run: yarn build
 
       - name: Tar files
-        run: tar -cvf ${{ env.WORKSPACE_ARCHIVE }} .
+        run: tar --exclude='.git' --exclude=${{ env.WORKSPACE_ARCHIVE }} -cvf ${{ env.WORKSPACE_ARCHIVE }} .
 
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: ${{ env.WORKSPACE_ARCHIVE }}
@@ -48,10 +51,10 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-2022, windows-2025]
-        arch: [x64, x32, x86_arm, x86_arm64]
+        arch: [x64, x32, x86_arm64]
     steps:
       - name: Checkout
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: .
@@ -82,7 +85,7 @@ jobs:
         os: [windows-2022, windows-2025]
     steps:
       - name: Checkout
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: ${{ env.WORKSPACE_ARTIFACT }}
           path: .
@@ -125,6 +128,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Cleanup
-        uses: GeekyEggo/delete-artifact@f275313e70c08f6120db482d7a6b98377786765b # v5
+        uses: GeekyEggo/delete-artifact@176a747ab7e287e3ff4787bf8a148716375ca118 # v6.0.0
         with:
           name: ${{ env.workspace_artifact }}

@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2019 ilammy
- * Copyright (c) 2021-2024 Leon Linhart
+ * Copyright (c) 2021-2026 Leon Linhart
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,10 +22,10 @@
  */
 import * as core from "@actions/core";
 import * as child from "child_process";
-import * as constants from "./constants";
+import * as constants from "./constants.js";
 import * as fs from "fs";
 import * as os from "os";
-import * as vswhere from "./vswhere";
+import * as vswhere from "./vswhere.js";
 
 async function run() {
     try {
@@ -82,7 +82,7 @@ async function run() {
                 return;
             }
 
-            const commandOutputParts = commandOutput.split("\f");
+            const commandOutputParts = (commandOutput as string).split("\f");
             const oldEnvOutput = commandOutputParts[0].split("\r\n");
             const vcvarsallOutput = commandOutputParts[1].split("\r\n");
             const newEnvOutput = commandOutputParts[2].split("\r\n");
@@ -113,12 +113,12 @@ async function run() {
 
                     const pathLikeVariables = ["PATH", "INCLUDE", "LIB", "LIBPATH"];
                     if (pathLikeVariables.indexOf(name.toUpperCase()) !== 1) {
-                        function unqiue(value: string, index: number, self: string[]) {
+                        function unique(value: string, index: number, self: string[]) {
                             return self.indexOf(value) === index;
                         }
 
                         newValue = newValue.split(';')
-                            .filter(unqiue)
+                            .filter(unique)
                             .join(";");
                     }
 

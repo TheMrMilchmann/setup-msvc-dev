@@ -14,7 +14,7 @@ additional use-cases and to experiment further with GitHub Actions.
 
 ```yaml
 steps:
-  - uses: TheMrMilchmann/setup-msvc-dev@v3
+  - uses: TheMrMilchmann/setup-msvc-dev@v4
     with:
       arch: x64
 ```
@@ -22,7 +22,7 @@ steps:
 ### Inputs
 
 - `arch` – target architecture (required if at least one is set: `sdk`,
-           `toolselt`, `uwp`, `spectre`)
+           `toolset`, `uwp`, `spectre`)
   - native compilation:
     - `x64`
     - `x86`
@@ -62,7 +62,7 @@ To get an overview about the action's versions, see the [changelog](docs/changel
 
 ```
 Copyright (c) 2019 ilammy
-Copyright (c) 2021-2024 Leon Linhart
+Copyright (c) 2021-2026 Leon Linhart
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
