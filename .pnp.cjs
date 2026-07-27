@@ -70,7 +70,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/plugin-rest-endpoint-methods", "virtual:ef461bf9dfab992a4a8b83f9ce47645137d062a7625083f049f0c085c76a8b070d30fe1eff90fd4d4f8d4d341f24a103d1790978c3b570c60c21fbc333180f3f#npm:17.0.0"],\
           ["@octokit/request", "npm:10.0.11"],\
           ["@octokit/request-error", "npm:7.1.0"],\
-          ["undici", "npm:6.27.0"]\
+          ["undici", "npm:6.28.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -81,7 +81,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/http-client", "npm:3.0.2"],\
           ["tunnel", "npm:0.0.6"],\
-          ["undici", "npm:6.27.0"]\
+          ["undici", "npm:6.28.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -90,7 +90,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/http-client", "npm:4.0.1"],\
           ["tunnel", "npm:0.0.6"],\
-          ["undici", "npm:6.27.0"]\
+          ["undici", "npm:6.28.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -226,7 +226,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/request-error", "npm:7.1.0"],\
           ["@octokit/types", "npm:16.0.0"],\
           ["content-type", "npm:2.0.0"],\
-          ["json-with-bigint", "npm:3.5.8"],\
+          ["json-with-bigint", "npm:3.5.10"],\
           ["universal-user-agent", "npm:7.0.3"]\
         ],\
         "linkType": "HARD"\
@@ -367,10 +367,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["json-with-bigint", [\
-      ["npm:3.5.8", {\
-        "packageLocation": "./.yarn/cache/json-with-bigint-npm-3.5.8-a5c068a5a0-84c4b34a25.zip/node_modules/json-with-bigint/",\
+      ["npm:3.5.10", {\
+        "packageLocation": "./.yarn/cache/json-with-bigint-npm-3.5.10-0940b663c1-d9d5b41f30.zip/node_modules/json-with-bigint/",\
         "packageDependencies": [\
-          ["json-with-bigint", "npm:3.5.8"]\
+          ["json-with-bigint", "npm:3.5.10"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -405,9 +405,9 @@ const RAW_RUNTIME_STATE =
           ["nopt", "npm:10.0.1"],\
           ["proc-log", "npm:7.0.0"],\
           ["semver", "npm:7.8.5"],\
-          ["tar", "npm:7.5.19"],\
+          ["tar", "npm:7.5.22"],\
           ["tinyglobby", "npm:0.2.17"],\
-          ["undici", "npm:8.7.0"],\
+          ["undici", "npm:8.9.0"],\
           ["which", "npm:7.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -465,14 +465,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["tar", [\
-      ["npm:7.5.19", {\
-        "packageLocation": "./.yarn/cache/tar-npm-7.5.19-667b5539a6-0b06a0917f.zip/node_modules/tar/",\
+      ["npm:7.5.22", {\
+        "packageLocation": "./.yarn/cache/tar-npm-7.5.22-4f603e5fa8-129606384b.zip/node_modules/tar/",\
         "packageDependencies": [\
           ["@isaacs/fs-minipass", "npm:4.0.1"],\
           ["chownr", "npm:3.0.0"],\
           ["minipass", "npm:7.1.3"],\
           ["minizlib", "npm:3.1.0"],\
-          ["tar", "npm:7.5.19"],\
+          ["tar", "npm:7.5.22"],\
           ["yallist", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -508,17 +508,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:6.27.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-6.27.0-00a86409ac-30c18cdb23.zip/node_modules/undici/",\
+      ["npm:6.28.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-6.28.0-8aca65475d-672a7a53bd.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:6.27.0"]\
+          ["undici", "npm:6.28.0"]\
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:8.7.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-8.7.0-5924f7a7c1-e9644903bd.zip/node_modules/undici/",\
+      ["npm:8.9.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-8.9.0-493171ffbc-dfad3e2330.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:8.7.0"]\
+          ["undici", "npm:8.9.0"]\
         ],\
         "linkType": "HARD"\
       }]\
