@@ -140,11 +140,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@octokit/endpoint", [\
-      ["npm:11.0.3", {\
-        "packageLocation": "./.yarn/cache/@octokit-endpoint-npm-11.0.3-024b6878f4-21b67d76fb.zip/node_modules/@octokit/endpoint/",\
+      ["npm:11.0.4", {\
+        "packageLocation": "./.yarn/cache/@octokit-endpoint-npm-11.0.4-dce993e1b7-7f25734549.zip/node_modules/@octokit/endpoint/",\
         "packageDependencies": [\
-          ["@octokit/endpoint", "npm:11.0.3"],\
-          ["@octokit/types", "npm:16.0.0"],\
+          ["@octokit/endpoint", "npm:11.0.4"],\
+          ["@octokit/types", "npm:17.0.0"],\
           ["universal-user-agent", "npm:7.0.3"]\
         ],\
         "linkType": "HARD"\
@@ -228,7 +228,7 @@ const RAW_RUNTIME_STATE =
       ["npm:10.0.13", {\
         "packageLocation": "./.yarn/cache/@octokit-request-npm-10.0.13-77047281ca-6edce2ab7c.zip/node_modules/@octokit/request/",\
         "packageDependencies": [\
-          ["@octokit/endpoint", "npm:11.0.3"],\
+          ["@octokit/endpoint", "npm:11.0.4"],\
           ["@octokit/request", "npm:10.0.13"],\
           ["@octokit/request-error", "npm:7.1.1"],\
           ["@octokit/types", "npm:17.0.0"],\
@@ -422,7 +422,7 @@ const RAW_RUNTIME_STATE =
           ["semver", "npm:7.8.5"],\
           ["tar", "npm:7.5.22"],\
           ["tinyglobby", "npm:0.2.17"],\
-          ["undici", "npm:8.9.0"],\
+          ["undici", "npm:8.10.0"],\
           ["which", "npm:7.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -530,10 +530,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:8.9.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-8.9.0-493171ffbc-dfad3e2330.zip/node_modules/undici/",\
+      ["npm:8.10.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-8.10.0-83850c8bfa-254219966d.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:8.9.0"]\
+          ["undici", "npm:8.10.0"]\
         ],\
         "linkType": "HARD"\
       }]\
