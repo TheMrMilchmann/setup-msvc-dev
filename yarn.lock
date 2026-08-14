@@ -204,14 +204,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/ncc@npm:^0.44.1":
-  version: 0.44.1
-  resolution: "@vercel/ncc@npm:0.44.1"
+"@vercel/ncc@npm:^0.45.0":
+  version: 0.45.0
+  resolution: "@vercel/ncc@npm:0.45.0"
   dependencies:
     node-gyp: "npm:latest"
   bin:
     ncc: dist/ncc/cli.js
-  checksum: 10/c362588870220b6cb03ca3c773f51eaa2c75f16fe45d7c6e4ba5e83d88b0c13b1b33a5f80e3c64c973478d91a9ca153ced4efd2fe55b501889d54c1563b2eb4d
+  checksum: 10/51f6be140dc24e7b685cca6cce02098ff31d642263d053eaf6387b53456d120f390d0683b4ae63249f323207d40508ae0da2138b4b630c5ce6565a9d4d5ebf79
   languageName: node
   linkType: hard
 
@@ -367,7 +367,7 @@ __metadata:
     "@actions/core": "npm:^3.0.0"
     "@actions/github": "npm:^9.0.0"
     "@types/node": "npm:^24.3.0"
-    "@vercel/ncc": "npm:^0.44.1"
+    "@vercel/ncc": "npm:^0.45.0"
     typescript: "npm:^6.0.0"
   languageName: unknown
   linkType: soft
