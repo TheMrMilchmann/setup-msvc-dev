@@ -232,8 +232,8 @@ const RAW_RUNTIME_STATE =
           ["@octokit/request", "npm:10.0.13"],\
           ["@octokit/request-error", "npm:7.1.1"],\
           ["@octokit/types", "npm:17.0.0"],\
-          ["content-type", "npm:2.0.0"],\
-          ["json-with-bigint", "npm:3.5.10"],\
+          ["content-type", "npm:2.1.0"],\
+          ["json-with-bigint", "npm:3.5.11"],\
           ["universal-user-agent", "npm:7.0.3"]\
         ],\
         "linkType": "HARD"\
@@ -315,10 +315,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["content-type", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "./.yarn/cache/content-type-npm-2.0.0-c790197c3d-0bbb276b79.zip/node_modules/content-type/",\
+      ["npm:2.1.0", {\
+        "packageLocation": "./.yarn/cache/content-type-npm-2.1.0-c765f38799-8aac907922.zip/node_modules/content-type/",\
         "packageDependencies": [\
-          ["content-type", "npm:2.0.0"]\
+          ["content-type", "npm:2.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -382,10 +382,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["json-with-bigint", [\
-      ["npm:3.5.10", {\
-        "packageLocation": "./.yarn/cache/json-with-bigint-npm-3.5.10-0940b663c1-d9d5b41f30.zip/node_modules/json-with-bigint/",\
+      ["npm:3.5.11", {\
+        "packageLocation": "./.yarn/cache/json-with-bigint-npm-3.5.11-6ed36f3232-bd7d78b661.zip/node_modules/json-with-bigint/",\
         "packageDependencies": [\
-          ["json-with-bigint", "npm:3.5.10"]\
+          ["json-with-bigint", "npm:3.5.11"]\
         ],\
         "linkType": "HARD"\
       }]\
