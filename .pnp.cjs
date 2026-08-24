@@ -68,7 +68,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/core", "npm:7.0.7"],\
           ["@octokit/plugin-paginate-rest", "virtual:ef461bf9dfab992a4a8b83f9ce47645137d062a7625083f049f0c085c76a8b070d30fe1eff90fd4d4f8d4d341f24a103d1790978c3b570c60c21fbc333180f3f#npm:14.0.0"],\
           ["@octokit/plugin-rest-endpoint-methods", "virtual:ef461bf9dfab992a4a8b83f9ce47645137d062a7625083f049f0c085c76a8b070d30fe1eff90fd4d4f8d4d341f24a103d1790978c3b570c60c21fbc333180f3f#npm:17.0.0"],\
-          ["@octokit/request", "npm:10.0.13"],\
+          ["@octokit/request", "npm:10.0.15"],\
           ["@octokit/request-error", "npm:7.1.1"],\
           ["undici", "npm:6.28.0"]\
         ],\
@@ -130,7 +130,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/auth-token", "npm:6.0.0"],\
           ["@octokit/core", "npm:7.0.7"],\
           ["@octokit/graphql", "npm:9.0.4"],\
-          ["@octokit/request", "npm:10.0.13"],\
+          ["@octokit/request", "npm:10.0.15"],\
           ["@octokit/request-error", "npm:7.1.1"],\
           ["@octokit/types", "npm:17.0.0"],\
           ["before-after-hook", "npm:4.0.0"],\
@@ -155,7 +155,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@octokit-graphql-npm-9.0.4-ff5d4b0c9b-1652cf026a.zip/node_modules/@octokit/graphql/",\
         "packageDependencies": [\
           ["@octokit/graphql", "npm:9.0.4"],\
-          ["@octokit/request", "npm:10.0.13"],\
+          ["@octokit/request", "npm:10.0.15"],\
           ["@octokit/types", "npm:17.0.0"],\
           ["universal-user-agent", "npm:7.0.3"]\
         ],\
@@ -225,15 +225,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@octokit/request", [\
-      ["npm:10.0.13", {\
-        "packageLocation": "./.yarn/cache/@octokit-request-npm-10.0.13-77047281ca-6edce2ab7c.zip/node_modules/@octokit/request/",\
+      ["npm:10.0.15", {\
+        "packageLocation": "./.yarn/cache/@octokit-request-npm-10.0.15-83aa14147f-f8c7dde8a9.zip/node_modules/@octokit/request/",\
         "packageDependencies": [\
           ["@octokit/endpoint", "npm:11.0.4"],\
-          ["@octokit/request", "npm:10.0.13"],\
+          ["@octokit/request", "npm:10.0.15"],\
           ["@octokit/request-error", "npm:7.1.1"],\
           ["@octokit/types", "npm:17.0.0"],\
-          ["content-type", "npm:2.1.0"],\
-          ["json-with-bigint", "npm:3.5.11"],\
+          ["content-type", "npm:3.0.0"],\
+          ["json-with-bigint", "npm:3.5.12"],\
           ["universal-user-agent", "npm:7.0.3"]\
         ],\
         "linkType": "HARD"\
@@ -315,10 +315,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["content-type", [\
-      ["npm:2.1.0", {\
-        "packageLocation": "./.yarn/cache/content-type-npm-2.1.0-c765f38799-8aac907922.zip/node_modules/content-type/",\
+      ["npm:3.0.0", {\
+        "packageLocation": "./.yarn/cache/content-type-npm-3.0.0-3bbfa339d3-24b17acec7.zip/node_modules/content-type/",\
         "packageDependencies": [\
-          ["content-type", "npm:2.1.0"]\
+          ["content-type", "npm:3.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -382,10 +382,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["json-with-bigint", [\
-      ["npm:3.5.11", {\
-        "packageLocation": "./.yarn/cache/json-with-bigint-npm-3.5.11-6ed36f3232-bd7d78b661.zip/node_modules/json-with-bigint/",\
+      ["npm:3.5.12", {\
+        "packageLocation": "./.yarn/cache/json-with-bigint-npm-3.5.12-72f61528c0-096a98e435.zip/node_modules/json-with-bigint/",\
         "packageDependencies": [\
-          ["json-with-bigint", "npm:3.5.11"]\
+          ["json-with-bigint", "npm:3.5.12"]\
         ],\
         "linkType": "HARD"\
       }]\
