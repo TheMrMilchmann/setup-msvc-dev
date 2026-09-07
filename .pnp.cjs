@@ -70,7 +70,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/plugin-rest-endpoint-methods", "virtual:ef461bf9dfab992a4a8b83f9ce47645137d062a7625083f049f0c085c76a8b070d30fe1eff90fd4d4f8d4d341f24a103d1790978c3b570c60c21fbc333180f3f#npm:17.0.0"],\
           ["@octokit/request", "npm:10.0.16"],\
           ["@octokit/request-error", "npm:7.1.2"],\
-          ["undici", "npm:6.28.0"]\
+          ["undici", "npm:6.28.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -81,7 +81,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/http-client", "npm:3.0.2"],\
           ["tunnel", "npm:0.0.6"],\
-          ["undici", "npm:6.28.0"]\
+          ["undici", "npm:6.28.1"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -90,7 +90,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/http-client", "npm:4.0.1"],\
           ["tunnel", "npm:0.0.6"],\
-          ["undici", "npm:6.28.0"]\
+          ["undici", "npm:6.28.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -422,7 +422,7 @@ const RAW_RUNTIME_STATE =
           ["semver", "npm:7.8.5"],\
           ["tar", "npm:7.5.22"],\
           ["tinyglobby", "npm:0.2.17"],\
-          ["undici", "npm:8.10.1"],\
+          ["undici", "npm:8.10.2"],\
           ["which", "npm:7.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -523,17 +523,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:6.28.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-6.28.0-8aca65475d-672a7a53bd.zip/node_modules/undici/",\
+      ["npm:6.28.1", {\
+        "packageLocation": "./.yarn/cache/undici-npm-6.28.1-db55889786-a64d597205.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:6.28.0"]\
+          ["undici", "npm:6.28.1"]\
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:8.10.1", {\
-        "packageLocation": "./.yarn/cache/undici-npm-8.10.1-663ee99ce2-7983c1a9ec.zip/node_modules/undici/",\
+      ["npm:8.10.2", {\
+        "packageLocation": "./.yarn/cache/undici-npm-8.10.2-8fc19cba7c-90f7ba3d3e.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:8.10.1"]\
+          ["undici", "npm:8.10.2"]\
         ],\
         "linkType": "HARD"\
       }]\
