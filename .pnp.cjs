@@ -232,7 +232,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/request", "npm:10.0.16"],\
           ["@octokit/request-error", "npm:7.1.2"],\
           ["@octokit/types", "npm:18.0.0"],\
-          ["content-type", "npm:3.1.0"],\
+          ["content-type", "npm:3.1.1"],\
           ["json-with-bigint", "npm:3.5.12"],\
           ["universal-user-agent", "npm:7.0.3"]\
         ],\
@@ -315,10 +315,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["content-type", [\
-      ["npm:3.1.0", {\
-        "packageLocation": "./.yarn/cache/content-type-npm-3.1.0-7a842fefea-ecca3f8210.zip/node_modules/content-type/",\
+      ["npm:3.1.1", {\
+        "packageLocation": "./.yarn/cache/content-type-npm-3.1.1-459ef55c9e-97d3f22c21.zip/node_modules/content-type/",\
         "packageDependencies": [\
-          ["content-type", "npm:3.1.0"]\
+          ["content-type", "npm:3.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
