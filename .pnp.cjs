@@ -282,7 +282,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@vercel-ncc-npm-0.45.0-328e44c841-51f6be140d.zip/node_modules/@vercel/ncc/",\
         "packageDependencies": [\
           ["@vercel/ncc", "npm:0.45.0"],\
-          ["node-gyp", "npm:13.0.2"]\
+          ["node-gyp", "npm:13.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -410,13 +410,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["node-gyp", [\
-      ["npm:13.0.2", {\
-        "packageLocation": "./.yarn/unplugged/node-gyp-npm-13.0.2-e24de51cbd/node_modules/node-gyp/",\
+      ["npm:13.1.0", {\
+        "packageLocation": "./.yarn/unplugged/node-gyp-npm-13.1.0-f9d5b0b5a3/node_modules/node-gyp/",\
         "packageDependencies": [\
           ["env-paths", "npm:2.2.1"],\
           ["exponential-backoff", "npm:3.1.3"],\
           ["graceful-fs", "npm:4.2.11"],\
-          ["node-gyp", "npm:13.0.2"],\
+          ["node-gyp", "npm:13.1.0"],\
           ["nopt", "npm:10.0.1"],\
           ["proc-log", "npm:7.0.0"],\
           ["semver", "npm:7.8.5"],\
