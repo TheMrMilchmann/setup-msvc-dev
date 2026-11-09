@@ -419,10 +419,10 @@ const RAW_RUNTIME_STATE =
           ["node-gyp", "npm:13.1.0"],\
           ["nopt", "npm:10.0.1"],\
           ["proc-log", "npm:7.0.0"],\
-          ["semver", "npm:7.8.5"],\
+          ["semver", "npm:7.8.6"],\
           ["tar", "npm:7.5.22"],\
           ["tinyglobby", "npm:0.2.17"],\
-          ["undici", "npm:8.12.3"],\
+          ["undici", "npm:8.12.4"],\
           ["which", "npm:7.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -457,10 +457,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["semver", [\
-      ["npm:7.8.5", {\
-        "packageLocation": "./.yarn/cache/semver-npm-7.8.5-785968bbf9-9b01d2ff11.zip/node_modules/semver/",\
+      ["npm:7.8.6", {\
+        "packageLocation": "./.yarn/cache/semver-npm-7.8.6-233581c96f-76fd62a781.zip/node_modules/semver/",\
         "packageDependencies": [\
-          ["semver", "npm:7.8.5"]\
+          ["semver", "npm:7.8.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -530,10 +530,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:8.12.3", {\
-        "packageLocation": "./.yarn/cache/undici-npm-8.12.3-9951970495-8a238fd928.zip/node_modules/undici/",\
+      ["npm:8.12.4", {\
+        "packageLocation": "./.yarn/cache/undici-npm-8.12.4-5db4c3e537-f99eb6c235.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:8.12.3"]\
+          ["undici", "npm:8.12.4"]\
         ],\
         "linkType": "HARD"\
       }]\
