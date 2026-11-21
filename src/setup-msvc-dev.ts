@@ -112,7 +112,7 @@ async function run() {
                     core.info(`Setting ${name}`);
 
                     const pathLikeVariables = ["PATH", "INCLUDE", "LIB", "LIBPATH"];
-                    if (pathLikeVariables.indexOf(name.toUpperCase()) !== 1) {
+                    if (pathLikeVariables.indexOf(name.toUpperCase()) !== -1) {
                         function unique(value: string, index: number, self: string[]) {
                             return self.indexOf(value) === index;
                         }

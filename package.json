@@ -1,6 +1,6 @@
 {
   "name": "setup-msvc-dev",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "private": true,
   "type": "module",
   "description": "",
@@ -26,11 +26,11 @@
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
-    "@vercel/ncc": "^0.44.1",
+    "@vercel/ncc": "^0.45.0",
     "typescript": "^6.0.0"
   },
   "engines": {
     "node": "24"
   },
-  "packageManager": "yarn@4.17.1"
+  "packageManager": "yarn@4.19.0"
 }
