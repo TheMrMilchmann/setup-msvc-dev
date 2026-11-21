@@ -1,8 +1,8 @@
-### 4.1.0
+### 4.1.1
 
-_Released 2026 Jul 23_
+_Released 2026 Nov 21_
 
-#### Improvements
+#### Fixes
 
-- Improved `vswhere` discovery to take into account well-known installation
-  paths before falling back to invocation via `%PATH%`.
+- Duplicate entries are removed from exactly the path-like variables (`PATH`, `INCLUDE`, `LIB`, `LIBPATH`).
+  - Previously, `INCLUDE` was skipped and every other changed variable was split on `;` and deduplicated.
