@@ -30,7 +30,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/core", "npm:3.0.1"],\
           ["@actions/github", "npm:9.1.1"],\
-          ["@types/node", "npm:24.19.4"],\
+          ["@types/node", "npm:26.6.10"],\
           ["@vercel/ncc", "npm:0.45.0"],\
           ["setup-msvc-dev", "workspace:."],\
           ["typescript", "patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"]\
@@ -268,11 +268,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:24.19.4", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-24.19.4-812026abd7-90981db59d.zip/node_modules/@types/node/",\
+      ["npm:26.6.10", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-26.6.10-a266e865b0-b4cd3369bc.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:24.19.4"],\
-          ["undici-types", "npm:7.24.6"]\
+          ["@types/node", "npm:26.6.10"],\
+          ["undici-types", "npm:8.9.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -471,7 +471,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@actions/core", "npm:3.0.1"],\
           ["@actions/github", "npm:9.1.1"],\
-          ["@types/node", "npm:24.19.4"],\
+          ["@types/node", "npm:26.6.10"],\
           ["@vercel/ncc", "npm:0.45.0"],\
           ["setup-msvc-dev", "workspace:."],\
           ["typescript", "patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"]\
@@ -539,10 +539,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici-types", [\
-      ["npm:7.24.6", {\
-        "packageLocation": "./.yarn/cache/undici-types-npm-7.24.6-8759b28e34-defc9538b9.zip/node_modules/undici-types/",\
+      ["npm:8.9.0", {\
+        "packageLocation": "./.yarn/cache/undici-types-npm-8.9.0-c5953f392d-8785591929.zip/node_modules/undici-types/",\
         "packageDependencies": [\
-          ["undici-types", "npm:7.24.6"]\
+          ["undici-types", "npm:8.9.0"]\
         ],\
         "linkType": "HARD"\
       }]\
